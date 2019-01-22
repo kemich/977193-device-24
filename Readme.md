@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Алексей](https://up.htmlacademy.ru/htmlcss/24/user/977193).
-* Наставник: `Кирилл Петров`.
+* Наставник: [Кирилл Петров](https://htmlacademy.ru/profile/frozik).
 
 ---
 
