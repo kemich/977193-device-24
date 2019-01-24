@@ -1,12 +1,131 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
+<html lang='ru'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width'>
+    <meta name='robots' content='index, follow'>
     <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
+    <meta name='description' content='Девайс - проект сайта интернет-магазина гаджетов, HTML Academy'>
+    <meta name='keywords' content='шаблон сайта, дизайн сайта, проект интернет-магазина, верстка'>
+    <link rel='stylesheet' href='css/styles.css'>
+</head>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<body>
+    <header class='header'>
+        <div class='wrap'>
+            <div class='logo'>
+                <a href="/" title='Главная'><img src='img/logo/logo.png' alt='Device - Интернет-магазин гаджетов'></a>
+            </div>
+            <div class='top'>
 
-  </body>
+                <div class='search'>
+                    <form action='/search?' method='get'>
+                        <input type='search' placeholder='Поиск по сайту'>
+                        <button>Найти</button>
+                    </form>
+                </div>
+
+
+                <div class='user'>
+                    <div class='login'>
+                        <a href='#'>Войти</a>
+                    </div>
+                    <div class='logout'>
+                        Валентин Петухов <a href='#'>Выйти</a>
+                    </div>
+                </div>
+                <div class='cart'>
+                    <a href='#'>Корзина</a>
+                </div>
+                <div class='compare'>
+                    <a href='#'>Сравнить</a>
+                </div>
+
+
+            </div>
+
+            <nav class='nav'>
+                <ul class='nav-menu'>
+                    <li><a href='#'>Каталог товаров</a>
+                        <ul class='menu-dropdown'>
+                            <li><a href='#'>Виртуальная реальность</a></li>
+                            <li><a href='#'>Моноподы для селфи</a></li>
+                            <li><a href='#'>Экшн камеры</a></li>
+                            <li><a href='#'>Фитнес браслеты</a></li>
+                            <li><a href='#'>Умные часы</a></li>
+                            <li><a href='#'>Квадрокоптеры</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href='#'>Доставка</a></li>
+                    <li><a href='#'>Гарантия</a></li>
+                    <li><a href='#'>Контакты</a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+    </header>
+    <main class='main'>
+        <div class='wrap'>
+            <div>
+                <h1>Заголовок</h1>
+                <p>Контент</p>
+            </div>
+        </div>
+    </main>
+    <footer class='footer'>
+        <div class='wrap'>
+            <div class='row-1'>
+                <div class='logo'>
+                    <a href="/" title='Главная'><img src='img/logo/logo-light.png' alt='Device - Интернет-магазин гаджетов'></a>
+
+                </div>
+                <div class='cart'>
+                    <a href='#'>Корзина</a>
+                </div>
+                <div class='compare'>
+                    <a href='#'>Сравнить</a>
+                </div>
+                <div class='user'>
+                    <div class='login'>
+                        <a href='#'>Войти</a>
+                    </div>
+                    <div class='logout'>
+                        <a href='#'>Валентин Петухов</a><span class='logout-btn'><a href='#' >Выйти</a></span>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class='row-2'>
+                <div class='address'>
+                    г. Москва, ул. Строителей, 15
+                </div>
+                <ul class='menu-info'>
+                    <li><a href='#'>Доставка</a></li>
+                    <li><a href='#'>Гарантия</a></li>
+                    <li><a href='#'>Контакты</a></li>
+                </ul>
+                <div class='phone'>
+                    Тел.: +7 (495) 495-95-95
+                </div>
+            </div>
+            <div class='row-3'>
+                <div class='empty-block'></div>
+                <ul class='socials'>
+                    <li><a href=""><img src='img/icons/facebook.png' alt='Facebook'></a></li>
+                    <li><a href=""><img src='img/icons/instagram.png' alt='Instagram'></a></li>
+                    <li><a href=""><img src='img/icons/twitter.png' alt='Twitter'></a></li>
+                </ul>
+                <div class='studio-link'><a href=""><img src='img/icons/logo-html.png' alt='HTML Academy'></a></div>
+            </div>
+
+        </div>
+    </footer>
+    <scripts src='js/scripts.js'></scripts>
+</body>
+
 </html>
