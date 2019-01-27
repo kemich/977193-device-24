@@ -59,6 +59,7 @@ ul {
     height: 300px;
 
 }
+
 .main-header-catalog {
 
     height: 186px;
@@ -82,8 +83,7 @@ ul {
     margin-top: -17px;
 }
 
-.main-header .main-nav .logo a img {
-}
+.main-header .main-nav .logo a img {}
 
 .main-header .main-nav .top {
     display: flex;
@@ -92,6 +92,7 @@ ul {
     height: 50px;
     line-height: 50px;
 }
+
 .main-header .main-nav .top a {
     color: #000000;
     font-size: 15px;
@@ -101,7 +102,7 @@ ul {
 }
 
 .main-header .main-nav .top .search {
-flex: 4;
+    flex: 4;
 
 }
 
@@ -119,26 +120,25 @@ flex: 4;
     padding: 0;
 }
 
-.main-header .main-nav .top .user-account .login {
-
-}
+.main-header .main-nav .top .user-account .login {}
 
 .main-header .main-nav .top .user-account .logout {
     display: none;
 }
-.main-header .main-nav .top .user-account .logout .logout-btn{
+
+.main-header .main-nav .top .user-account .logout .logout-btn {
     opacity: 0.5;
     padding-left: 20px;
 }
 
 
 .main-header .main-nav .top .compare {
-flex: 1;
-text-align: right;
+    flex: 1;
+    text-align: right;
 }
 
 .main-header .main-nav .top .cart {
-flex: 1;
+    flex: 1;
     text-align: right;
 
 }
@@ -170,7 +170,7 @@ flex: 1;
 
 }
 
-.main-header .main-nav .main-menu> li > a {
+.main-header .main-nav .main-menu > li > a {
     color: #000000;
     font-family: 'Gilroy ExtraBold';
     font-size: 18px;
@@ -180,11 +180,12 @@ flex: 1;
     letter-spacing: 3.6px;
     text-decoration: none;
 }
-.main-header .main-nav .main-menu> li:first-child{
+
+.main-header .main-nav .main-menu > li:first-child {
     position: relative;
 }
 
-.main-header .main-nav .main-menu .menu-catalog-dropdown{
+.main-header .main-nav .main-menu .menu-catalog-dropdown {
     visibility: hidden;
     position: absolute;
     left: 0;
@@ -193,7 +194,8 @@ flex: 1;
     padding: 29px 60px;
     background-color: #f7e296;
 }
-.main-header .main-nav .main-menu> li:first-child:hover .menu-catalog-dropdown{
+
+.main-header .main-nav .main-menu > li:first-child:hover .menu-catalog-dropdown {
     visibility: visible;
 }
 
@@ -210,10 +212,11 @@ flex: 1;
     padding: 0px;
 }
 
-.menu-catalog-items  li {
+.menu-catalog-items li {
     line-height: 36px;
 
 }
+
 .menu-catalog-items li:nth-child(5) {
     height: 50%;
 
@@ -232,7 +235,90 @@ flex: 1;
 
 
 
-.main-content {}
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumbs {
+    order: 1;
+    padding: 0 60px;
+}
+
+.breadcrumbs ul {
+    padding: 0;
+    display: flex;
+}
+
+.breadcrumbs ul li {
+    padding-right: 20px;
+}
+
+.title {
+    order: 2;
+    padding: 0 60px;
+}
+
+.products {
+    order: 3;
+    display: flex;
+    flex-direction: row;
+}
+
+.products-filters {
+    order: 1;
+    flex: 1;
+}
+
+.products-content {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+
+}
+
+.products-pagination {
+    order: 3;
+}
+
+.products-sort {
+    order: 1;
+}
+
+.product-items {
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-item-title {
+    order: 2;
+}
+
+product-item-image {
+    order: 1;
+}
+
+.product-item-price {
+    order: 3;
+}
+
+.product-item-add-to-cart {
+    order: 4;
+}
+
+.product-item-add-to-compare {
+    order: 5;
+}
 
 .main-footer {
     display: flex;
@@ -249,10 +335,13 @@ flex: 1;
     justify-content: flex-end;
 }
 
-.main-footer .row-1 .login, .main-footer .row-1 .compare, .main-footer .row-1 .cart{
+.main-footer .row-1 .login,
+.main-footer .row-1 .compare,
+.main-footer .row-1 .cart {
     padding-left: 65px;
 
 }
+
 .main-footer .row-1 a {
 
     opacity: 0.7;
@@ -267,28 +356,29 @@ flex: 1;
 
 .main-footer .logo {
 
-flex: 1;
+    flex: 1;
 
 }
+
 .main-footer .logo a {
 
-opacity: 1;
+    opacity: 1;
 }
 
 .main-footer .logo a img {
     width: 163px;
     height: 35px;
 }
-.main-footer .user-account{
-   display: flex;
+
+.main-footer .user-account {
+    display: flex;
     justify-content: flex-end;
 }
 
-.main-footer .user-account .login {
+.main-footer .user-account .login {}
 
-}
 .main-footer .user-account .logout {
-  display: none;
+    display: none;
 }
 
 .main-footer .user-account .logout .logout-btn {
@@ -346,6 +436,7 @@ opacity: 1;
     order: 3;
 
 }
+
 .main-footer .phone a {
 
     color: #ffffff;
@@ -395,7 +486,7 @@ opacity: 1;
 }
 
 .main-footer .row-3 .studio-link {
-   height: 35px;
+    height: 35px;
 }
 
 .main-footer .row-3 .studio-link a {}
