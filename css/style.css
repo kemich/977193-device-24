@@ -56,13 +56,13 @@ ul {
 .main-header {
     margin-top: 40px;
     background-color: rgba(240, 197, 46, 0.5);
-    height: 300px;
+    height: 186px;
 
 }
 
-.main-header-catalog {
+.main-header-index {
 
-    height: 186px;
+    height: 300px;
 
 }
 
@@ -235,60 +235,101 @@ ul {
     text-decoration: none;
 }
 
-
-
-
 .main-content {
+
+}
+.main-content-index {
 
 }
 .main-content-catalog{
     display: flex;
     flex-direction: column;
 }
+.main-content-title {
+    order: 1;
+    margin: 0;
+    padding: 40px 60px 0 60px;
+    height: 48px;
+    color: #000000;
+    font-family: 'Gilroy ExtraBold';
+    font-size: 47px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0.17px;
+}
 .breadcrumbs {
     order: 2;
-    padding: 0 60px;
+    padding: 25px 60px 45px 60px;
 }
 
 .breadcrumbs ul {
     padding: 0;
+    margin: 0;
     display: flex;
+    line-height: 24px;
+    height: 24px;
+opacity: 0.3;
+color: #000000;
+font-family: 'OpenSans Normal';
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0.14px;
+
 }
 
 .breadcrumbs ul li {
     padding-right: 20px;
 }
-
-.main-content-title {
-    order: 1;
-    padding: 0 60px;
+.breadcrumbs ul li a{
+    text-decoration: none;
 }
 
-.products {
+
+
+.products-content-title{
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+.main-content-products {
     order: 3;
     display: flex;
     flex-direction: row;
+    padding: 0 0 0 60px;
 }
 
 .products-filters {
     order: 1;
     flex: 1;
 }
+.products-filters-title {
+    background: #dbdbdb;
+    margin: 0;
+    height: 70px;
+}
+.products-filters-form {
+    background: #eeeeee;
+    height: 100%;
+}
 
 .products-content {
     order: 2;
     display: flex;
     flex-direction: column;
-    flex: 2;
+    flex: 3;
 
 }
 
 .products-pagination {
     order: 3;
+    background: #ebebeb;
 }
 
 .products-sort {
     order: 1;
+    background: #ebebeb;
+    height: 70px;
 }
 
 .product-items {
@@ -316,14 +357,19 @@ product-item-image {
 .product-item-price {
     order: 3;
 }
+.product-item-btns{
 
-.product-item-add-to-cart {
+}
+.product-item-add-to-cart-btn {
     order: 4;
 }
 
-.product-item-add-to-compare {
+.product-item-add-to-compare-btn {
     order: 5;
 }
+
+
+
 
 .main-footer {
     display: flex;
