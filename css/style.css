@@ -236,12 +236,14 @@ ul {
 
 
 .main-content {
+
+}
+.main-content-catalog{
     display: flex;
     flex-direction: column;
 }
-
 .breadcrumbs {
-    order: 1;
+    order: 2;
     padding: 0 60px;
 }
 
@@ -254,8 +256,8 @@ ul {
     padding-right: 20px;
 }
 
-.title {
-    order: 2;
+.main-content-title {
+    order: 1;
     padding: 0 60px;
 }
 

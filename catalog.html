@@ -16,7 +16,7 @@
     <header class='main-header main-header-catalog wrap'>
         <nav class='main-nav'>
             <div class='logo'>
-                <a href="/" title='Главная'><img src='img/logo/logo.png' alt='Device - Интернет-магазин гаджетов'></a>
+                <a href="index.html" title='Главная'><img src='img/logo/logo.png' alt='Device - Интернет-магазин гаджетов'></a>
             </div>
             <div class='top'>
                 <div class='search'>
@@ -37,15 +37,15 @@
                 </div>
             </div>
             <ul class='main-menu'>
-                <li><a href='#'>Каталог товаров</a>
+                <li><a href='catalog.html'>Каталог товаров</a>
                     <div class='menu-catalog-dropdown'>
                         <ul class='menu-catalog-items'>
-                            <li><a href='#'>Виртуальная реальность</a></li>
-                            <li><a href='#'>Моноподы для селфи</a></li>
-                            <li><a href='#'>Экшн камеры</a></li>
-                            <li><a href='#'>Фитнес браслеты</a></li>
-                            <li><a href='#'>Умные часы</a></li>
-                            <li><a href='#'>Квадрокоптеры</a></li>
+                            <li><a href='catalog.html'>Виртуальная реальность</a></li>
+                            <li><a href='catalog.html'>Моноподы для селфи</a></li>
+                            <li><a href='catalog.html'>Экшн камеры</a></li>
+                            <li><a href='catalog.html'>Фитнес браслеты</a></li>
+                            <li><a href='catalog.html'>Умные часы</a></li>
+                            <li><a href='catalog.html'>Квадрокоптеры</a></li>
                         </ul>
                     </div>
                 </li>
@@ -55,12 +55,19 @@
             </ul>
         </nav>
     </header>
-    <main class='main-content wrap'>
-
-        <h1 class="title">Моноподы для селфи</h1>
+    <main class='main-content main-content-catalog wrap'>
+        <section class='breadcrumbs'>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог товаров</a></li>
+                <li>Моноподы для селфи</li>
+            </ul>
+        </section>
+        <h1 class="main-content-title">Моноподы для селфи</h1>
 
         <section class='products'>
             <section class='products-content'>
+                <h3 style='visibility: hidden'>Список товаров</h3>
                 <ul class='product-items'>
                     <li class='product-item'>
                         <h2 class='product-item-title'>Любительская селфи-палка</h2>
@@ -102,21 +109,32 @@
             </section>
             <section class='products-filters'>
                 <h3>Фильтр:</h3>
+                <form action='' method='get'>
+                    <fieldset>
+                        <legend>Цвет</legend>
+                        <label><input type='checkbox' name='black_color' checked>Черный</label>
+                        <label><input type='checkbox' name='white_color'>Белый</label>
+                        <label><input type='checkbox' name='blue_color' checked>Синий</label>
+                        <label><input type='checkbox' name='rad_color' checked>Красный</label>
+                        <label><input type='checkbox' name='pink_color'>Розовый</label>
+                    </fieldset>
+                    <fieldset>
+
+                        <legend>Bluetooth</legend>
+                        <label><input type='radio' name='bluetooth' value='true' checked>Есть</label>
+                        <label><input type='radio' name='bluetooth' value='false'>Нет</label>
+
+                    </fieldset>
+
+                    <input type='submit' value='Показать'>
+                </form>
             </section>
         </section>
-        <section class='breadcrumbs'>
-            <ul>
-                <li><a href="/">Главная</a></li>
-                <li><a href="catalog.html">Каталог товаров</a></li>
-                <li>Моноподы для селфи</li>
-            </ul>
-        </section>
-
     </main>
     <footer class='main-footer wrap'>
         <div class='row-1'>
             <div class='logo'>
-                <a href="/" title='Главная'><img src='img/logo/logo-light.png' alt='Device - Интернет-магазин гаджетов'></a>
+                <a href="index.html" title='Главная'><img src='img/logo/logo-light.png' alt='Device - Интернет-магазин гаджетов'></a>
             </div>
             <div class='user-account'>
                 <div class='login'>
