@@ -56,6 +56,11 @@ ul {
 .main-header {
     margin-top: 40px;
     background-color: rgba(240, 197, 46, 0.5);
+    height: 300px;
+
+}
+.main-header-catalog {
+
     height: 186px;
 
 }
