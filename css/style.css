@@ -287,7 +287,21 @@ ul {
   text-decoration: none;
 }
 
+.slider-item {
+  display: none;
+}
 
+#slider-item-1-control:checked ~ #slider-item-1 {
+  display: block;
+}
+
+#slider-item-2-control:checked ~ #slider-item-2 {
+  display: block;
+}
+
+#slider-item-3-control:checked ~ #slider-item-3 {
+  display: block;
+}
 
 .products-content-title {
   visibility: hidden;
