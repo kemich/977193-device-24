@@ -107,8 +107,7 @@ ul {
 }
 
 .main-header .main-nav .top .search {
-  flex: 4;
-
+  flex: 4.3;
 }
 
 .main-header .main-nav .top .search form {
@@ -164,7 +163,7 @@ ul {
 }
 
 .main-header .main-nav .main-menu > li:first-child {
-  flex: 3;
+  flex: 3.2;
 }
 
 
@@ -219,7 +218,9 @@ ul {
 
 .menu-catalog-items li {
   line-height: 36px;
-  padding-right: 60px;
+  padding-right: 58px;
+  min-width: 143px;
+  max-width: 300px;
 
 }
 
@@ -542,6 +543,7 @@ product-item-image {
 .main-footer .row-3 .socials li a img {
   height: 32px;
   width: 32px;
+  opacity: 0.3;
 
 }
 
