@@ -148,7 +148,13 @@
       </section>
       <section class='products-filters'>
         <h2 class='products-filters-title'>Фильтр:</h2>
-        <form class='products-filters-form' action='catalog.html?' method='get'>
+        <form class='products-filters-form' action='catalog.html?' method='get' oninput='priceMaxPut.value=priceMax.value; priceMinPut.value=priceMin.value'>
+          <fieldset>
+            <legend>Стоимость</legend>
+            <output name="priceMinPut">1</output>
+            <input type="range" id="priceMin" name="price-min" min="1" max="8000" step="1">
+            <input type="range" id="priceMax" name="price-max" min=priceMinPut.value max="8000" step="1"><output name="priceMaxPut">8000</output>
+          </fieldset>
           <fieldset>
             <legend>Цвет</legend>
             <label><input type='checkbox' name='black_color' checked>Черный</label>
