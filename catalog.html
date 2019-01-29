@@ -9,7 +9,7 @@
   <title>HTML Academy: Девайс</title>
   <meta name='description' content='Девайс - проект сайта интернет-магазина гаджетов, HTML Academy'>
   <meta name='keywords' content='шаблон сайта, дизайн сайта, проект интернет-магазина, верстка'>
-  <link rel='stylesheet' href='css/style.css'>
+  <link rel='stylesheet' href='css/styfle.css'>
 </head>
 
 <body>
@@ -125,10 +125,25 @@
           </li>
         </ul>
         <section class='products-sort'>
-          Сортировка
+          <h3 class='products-sort-title'>Сортировка:</h3>
+          <div class='products-sort-types'>
+            <button type='button' class='js-sort-price'>По цене</button>
+            <button type='button' class='js-sort-type'>По типу</button>
+            <button type='button' class='js-sort-popularity'>По популярности</button>
+            <button type='button' class='js-sort-direct'><span>В прямом порядке</span></button>
+            <button type='button' class='js-sort-reverce'><span>В обратном порядке</span></button>
+          </div>
         </section>
         <section class='products-pagination'>
-          Пагинация
+          <h3 class='products-pagination-title'>Навигация по страницам</h3>
+          <ul class='products-pagination-items'>
+            <li class='products-pagination-item'><a>Назад</a></li>
+            <li class='products-pagination-item'><a>1</a></li>
+            <li class='products-pagination-item'><a href='catalog.html?page=2'>2</a></li>
+            <li class='products-pagination-item'><a href='catalog.html?page=3'>3</a></li>
+            <li class='products-pagination-item'><a href='catalog.html?page=2'>Вперед</a></li>
+          </ul>
+
         </section>
       </section>
       <section class='products-filters'>

@@ -63,16 +63,18 @@
     <section class='index-slider'>
       <h2 class='slider-title'>Наши лучшие предложения</h2>
       <div class='slider-controls'>
-        <input type="radio" name='index-slider' value='slider-item-1' id='slider-item-1-control' checked>
-        <input type="radio" name='index-slider' value='slider-item-2' id='slider-item-2-control'>
-        <input type="radio" name='index-slider' value='slider-item-3' id='slider-item-3-control'>
-
+        <input type='radio' name='index-slider' value='slider-item-1' id='slider-item-1' checked>
+        <label for='slider-item-1'>Слайд 1</label>
+        <input type='radio' name='index-slider' value='slider-item-2' id='slider-item-2'>
+        <label for='slider-item-2'>Слайд 2</label>
+        <input type='radio' name='index-slider' value='slider-item-3' id='slider-item-3'>
+        <label for='slider-item-3'>Слайд 3</label>
         <ul class='slider-items'>
           <li class='slider-item' id='slider-item-1'>
             <h3 class='slider-item-title'><span>Делай селфи, </span><span>как Бен Стиллер!</span></h3>
             <p class='slider-item-description'>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <p class='slider-item-image'><img src="img/slides/slider-1.jpg" alt="" height='486' width='384'></p>
-            <p class='slider-item-link'><a href="product.html?id=item-x">Подробнее</a></p>
+            <p class='slider-item-image'><img src='img/slides/slider-1.jpg' alt='' height='486' width='384'></p>
+            <p class='slider-item-link'><a href='product.html?id=item-x'>Подробнее</a></p>
             <dl class='slider-item-properties'>
               <dt>Длина палки</dt>
               <dd>8,5 м</dd>
@@ -86,8 +88,8 @@
             <h3 class='slider-item-title'><span>Худеем </span><span>правильно!</span></h3>
             <p class='slider-item-description'>Мотивирующие фитнес-браслеты помогут найти в себе силы
               не пропускать занятия и соблюдать диету.</p>
-            <p class='slider-item-image'><img src="img/slides/slider-2.jpg" alt="" height='485' width='345'></p>
-            <p class='slider-item-link'><a href="product.html?id=item-y">Подробнее</a></p>
+            <p class='slider-item-image'><img src='img/slides/slider-2.jpg' alt='' height='485' width='345'></p>
+            <p class='slider-item-link'><a href='product.html?id=item-y'>Подробнее</a></p>
             <dl class='slider-item-properties'>
               <dt>Без подзарядки</dt>
               <dd>48 часов</dd>
@@ -97,8 +99,8 @@
             <h3 class='slider-item-title'><span>Порхает как бабочка, </span><span>жалит как пчела!</span></h3>
             <p class='slider-item-description'>Этот обычный, на первый взгляд, квадрокоптер оснащен
               мощным лазером, замаскированным под стандартную камеру.</p>
-            <p class='slider-item-image'><img src="img/slides/slider-3.jpg" alt="" height='334' width='526'></p>
-            <p class='slider-item-link'><a href="product.html?id=item-z">Подробнее</a></p>
+            <p class='slider-item-image'><img src='img/slides/slider-3.jpg' alt='' height='334' width='526'></p>
+            <p class='slider-item-link'><a href='product.html?id=item-z'>Подробнее</a></p>
             <dl class='slider-item-properties'>
               <dt>Дальность полета</dt>
               <dd>800 м</dd>
@@ -132,23 +134,45 @@
         </li>
       </ul>
     </section>
-    <section>
-
+    <section class='index-services'>
+      <h2 class='services-title'>Наши услуги</h2>
+      <div class='services-controls'>
+        <input type='radio' name='index-services' value='services-item-1' id='services-item-1' checked>
+        <label for='services-item-1'>Доставка</label>
+        <input type='radio' name='index-services' value='services-item-2' id='services-item-2'>
+        <label for='services-item-2'>Гарантия</label>
+        <input type='radio' name='index-services' value='services-item-3' id='services-item-3'>
+        <label for='services-item-3'>Кредит</label>
+        <ul class='services-items'>
+          <li class='services-item'>
+            <h3 class='services-item-title'>Доставка</h3>
+            <p class='services-item-description'>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </li>
+          <li class='services-item'>
+            <h3 class='services-item-title'>Гарантия</h3>
+            <p class='services-item-description'>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+          </li>
+          <li class='services-item'>
+            <h3 class='services-item-title'>Кредит</h3>
+            <p class='services-item-description'>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class='index-brands'>
       <h2 class='brands-title'>Бренды</h2>
       <ul class='brands-items'>
         <li class='brands-item'>
-          <a href='brand.html?id=item-1'><img src="img/brands/brand-1-color.png" alt="Dji" width='260' height='100'><span>Dji</span></a>
+          <a href='brand.html?id=item-1'><img src='img/brands/brand-1-color.png' alt='Dji' width='260' height='100'><span>Dji</span></a>
         </li>
         <li class='brands-item'>
-          <a href='brand.html?id=item-2'><img src="img/brands/brand-2-color.png" alt="SP Gadgets" width='260' height='100'><span>SP Gadgets</span></a>
+          <a href='brand.html?id=item-2'><img src='img/brands/brand-2-color.png' alt='SP Gadgets' width='260' height='100'><span>SP Gadgets</span></a>
         </li>
         <li class='brands-item'>
-          <a href='brand.html?id=item-3'><img src="img/brands/brand-3-color.png" alt="GoPro" width='260' height='100'><span>GoPro</span></a>
+          <a href='brand.html?id=item-3'><img src='img/brands/brand-3-color.png' alt='GoPro' width='260' height='100'><span>GoPro</span></a>
         </li>
         <li class='brands-item'>
-          <a href='brand.html?id=item-4'><img src="img/brands/brand-4-color.png" alt="Vive" width='260' height='100'><span>Vive</span></a>
+          <a href='brand.html?id=item-4'><img src='img/brands/brand-4-color.png' alt='Vive' width='260' height='100'><span>Vive</span></a>
         </li>
       </ul>
     </section>
@@ -224,6 +248,24 @@
       </div>
     </div>
   </footer>
+  <section class='modal modal-feedback'>
+    <h2 class='modal-feedback-title'>Форма обратной связи</h2>
+    <form class='feedback-form' action=''>
+      <label for='name'>Ваше имя:</label>
+      <input type='text' name='name' id='name' placeholder='Имя Фамилия'>
+      <label for='email'>Ваш e-mail:</label>
+      <input type='email' name='email' id='email' placeholder='email@example.com'>
+      <label for='comment'>Текст письма:</label>
+      <textarea name='comment' id='comment' rows='6' placeholder='В свободной форме'></textarea>
+      <button type='submit'>Отправить</button>
+      <button type='button' class='js-modal-close'><span>Закрыть</span></button>
+    </form>
+  </section>
+  <section class='modal modal-map'>
+    <h2 class='modal-map-title'>Как нас найти</h2>
+    <img src="img/map-big.png" alt="Как нас найти" width='991' height='591'>
+    <button type='button' class='js-modal-close'><span>Закрыть</span></button>
+  </section>
   <script src='js/script.js'></script>
 </body>
 
