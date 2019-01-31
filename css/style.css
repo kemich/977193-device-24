@@ -34,7 +34,7 @@
     url('../fonts/opensanslight.woff') format('woff');
 }
 
-body {
+.site {
   font-family: 'OpenSans', 'Arial', sans-serif;
   width: 100%;
   min-width: 1200px;
@@ -43,6 +43,87 @@ body {
   flex-direction: column;
 
 }
+
+.site__header {}
+
+.site__header_catalog {}
+
+.header {}
+
+.header__nav {}
+
+.header-nav {}
+
+.header-nav__logo {}
+
+.header-nav__top-menu {}
+
+.header-nav__main-menu {}
+
+.logo {}
+
+.logo__link {}
+
+.logo__img {}
+
+.top-menu {}
+
+.top-menu__search {}
+
+.top-menu__user {}
+
+.top-menu__compare {}
+
+.top-menu__cart {}
+
+.search {}
+
+.search__form {}
+
+.search__input {}
+
+.search__button {}
+
+.user {}
+
+.user__item {}
+
+.user__item_login {}
+
+.user__item_account {}
+
+.user__link {}
+
+.user__link_login {}
+
+.user__link_enter {}
+
+.user__link_logout {}
+
+.compare {}
+
+.compare__link {}
+
+.cart {}
+
+.cart__link {}
+
+.main-menu {}
+
+.main-menu__item {}
+
+.main-menu__link {}
+
+.main-menu__catalog-dropdown {}
+
+.catalog-dropdown {}
+
+.catalog-dropdown__list {}
+
+.catalog-dropdown__item {}
+
+.catalog-dropdown__link {}
+
 
 ul {
   list-style: none;
