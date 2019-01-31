@@ -137,13 +137,23 @@
 
 .user {}
 
+.user_auth {}
+
+.user_not-auth {}
+
+.user_auth .user__item_login {
+  display: none;
+}
+
+.user_not-auth .user__item_account {
+  display: none;
+}
+
 .user__item {}
 
 .user__item_login {}
 
-.user__item_account {
-  display: none;
-}
+.user__item_account {}
 
 .user__link {
   color: #000000;
