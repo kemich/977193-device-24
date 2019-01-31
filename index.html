@@ -13,7 +13,7 @@
 </head>
 
 <body class="site">
-  <header class="site__header header header_index">
+  <header class="site__header site__header_index header">
     <nav class="header__nav header-nav">
       <div class="header-nav__logo logo">
         <a class="logo__link">
@@ -221,72 +221,95 @@
       </p>
     </section>
   </main>
-  <footer class="main-footer wrap">
-    <div class="row-1">
-      <div class="logo">
-        <a>
-          <img src="img/logo/logo-device-yellow.svg" alt="Device" width="163" height="35">
-          <span>Главная</span>
+  <footer class="site__footer footer">
+    <div class="footer__container">
+      <div class="footer__logo logo">
+        <a class="logo__link">
+          <img class="logo__img" src="img/logo/logo-device-yellow.svg" alt="Device - Интернет-магазин гаджетов" width="163" height="35">
         </a>
       </div>
-      <div class="user-account">
-        <div class="login">
-          <a href="login.html">Войти</a>
-        </div>
-        <div class="logout">
-          <a href="user.html">Валентин Петухов</a><span class="logout-btn"><a href="index.html">Выйти</a></span>
-        </div>
+      <ul class="footer__user user user_not-auth">
+        <li class="user__item user__item_login">
+          <a class="user__link user__link_login" href="login.html">Войти</a>
+        </li>
+        <li class="user__item user__item_account">
+          <a class="user__link user__link_enter" href="user.html">Валентин Петухов</a>
+          <a class="user__link user__link_logout" href="index.html">Выйти</a>
+        </li>
+      </ul>
+      <div class="footer__compare compare">
+        <a class="compare__link" href="compare.html">Сравнить</a>
       </div>
-      <div class="compare">
-        <a href="compare.html">Сравнить</a>
-      </div>
-      <div class="cart">
-        <a href="cart.html">Корзина</a>
+      <div class="footer__cart cart">
+        <a class="cart__link" href="cart.html">Корзина</a>
       </div>
     </div>
-    <div class="row-2">
-      <address class="address">
+    <div class="footer__container">
+      <address class="footer__address address">
         г. Москва, ул. Строителей, 15
       </address>
-      <div class="phone">
-        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+      <div class="footer__phone phone">
+        <a class="phone__link" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
-      <ul class="footer-menu">
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="warranty.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+      <ul class="footer__menu footer-menu">
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="delivery.html">Доставка</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="warranty.html">Гарантия</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="contacts.html">Контакты</a>
+        </li>
       </ul>
     </div>
-    <div class="row-3">
-      <ul class="socials">
-        <li><a href="#"><img src="img/icons/fb.svg" alt="Мы в Facebook" width="32" height="32"><span>Facebook</span></a></li>
-        <li><a href="#"><img src="img/icons/instagram.svg" alt="Мы в Instagram" width="32" height="32"><span>Instagram</span></a></li>
-        <li><a href="#"><img src="img/icons/twitter.svg" alt="Мы в Twitter" width="32" height="32"><span>Twitter</span></a></li>
+    <div class="footer__container">
+      <ul class="footer__socials socials">
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <img class="socials__img" src="img/icons/fb.svg" alt="Мы в Facebook" width="32" height="32">
+            Мы в Facebook
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <img class="socials__img" src="img/icons/instagram.svg" alt="Мы в Instagram" width="32" height="32">
+            Мы в Instagram
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <img class="socials__img" src="img/icons/twitter.svg" alt="Мы в Twitter" width="32" height="32">
+            Мы в Twitter
+          </a>
+        </li>
       </ul>
-      <div class="studio-link">
-        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-          <img src="img/icons/logo-html.svg" alt="HTML Academy" width="27" height="35">
+      <div class="footer__studio-link studio-link">
+        <a class="studio-link__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+          <img class="studio-link__img" src="img/icons/logo-html.svg" alt="HTML Academy" width="27" height="35">
+          Сделано в HTML Academy
         </a>
       </div>
     </div>
   </footer>
-  <section class="modal modal-feedback">
-    <h2 class="modal-feedback-title">Форма обратной связи</h2>
-    <form class="feedback-form" action="">
-      <label for="name">Ваше имя:</label>
-      <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-      <label for="email">Ваш e-mail:</label>
-      <input type="email" name="email" id="email" placeholder="email@example.com">
-      <label for="comment">Текст письма:</label>
-      <textarea name="comment" id="comment" rows="6" placeholder="В свободной форме"></textarea>
-      <button type="submit">Отправить</button>
-      <button type="button" class="js-modal-close"><span>Закрыть</span></button>
+  <section class="site__modal modal modal_feedback">
+    <h2 class="modal__title">Форма обратной связи</h2>
+    <form class="modal_feedback__form" action="">
+      <label class="modal_feedback__label" for="name">Ваше имя:</label>
+      <input class="modal_feedback__input" type="text" name="name" id="name" placeholder="Имя Фамилия">
+      <label class="modal_feedback__label" for="email">Ваш e-mail:</label>
+      <input class="modal_feedback__input" type="email" name="email" id="email" placeholder="email@example.com">
+      <label class="modal_feedback__label" for="comment">Текст письма:</label>
+      <textarea class="modal_feedback__textarea" name="comment" id="comment" rows="6" placeholder="В свободной форме"></textarea>
+      <button class="modal_feedback__button modal_feedback__button_submit button" type="submit">Отправить</button>
     </form>
+    <button class="modal__button modal__button_close button js-modal__button_close" type="button">Закрыть</button>
+
   </section>
-  <section class="modal modal-map">
-    <h2 class="modal-map-title">Как нас найти</h2>
-    <img src="img/map-big.png" alt="Как нас найти" width="991" height="591">
-    <button type="button" class="js-modal-close"><span>Закрыть</span></button>
+  <section class="site__modal modal modal_map">
+    <h2 class="modal__title">Как нас найти</h2>
+    <img class="modal_map__map" src="img/map-big.jpg" alt="Как нас найти" width="991" height="591">
+    <button class="modal__button modal__button_close button js-modal__button_close" type="button">Закрыть</button>
   </section>
   <script src="js/script.js"></script>
 </body>
