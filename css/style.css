@@ -34,7 +34,7 @@
     url("../fonts/opensanslight.woff") format("woff");
 }
 
-.site {
+body {
   font-family: "OpenSans", "Arial", sans-serif;
   width: 100%;
   min-width: 1200px;
@@ -44,7 +44,7 @@
 
 }
 
-.site ul {
+body ul {
   list-style: none;
 }
 
@@ -61,7 +61,6 @@
   height: 300px;
 }
 
-.site__header--catalog {}
 
 .site__header .header__nav {
   display: flex;
@@ -313,15 +312,15 @@
   display: none;
 }
 
-.index-slider .slider-controls #slider-item-1:checked ~ .slider-items .slider-item:nth-child(1) {
+.index-slider__controls #slider-item-1:checked ~ .slider-items .slider-item:nth-child(1) {
   display: block;
 }
 
-.index-slider .slider-controls #slider-item-2:checked ~ .slider-items .slider-item:nth-child(2) {
+.index-slider__controls #slider-item-2:checked ~ .slider-items .slider-item:nth-child(2) {
   display: block;
 }
 
-.index-slider .slider-controls #slider-item-3:checked ~ .slider-items .slider-item:nth-child(3) {
+.index-slider__controls #slider-item-3:checked ~ .slider-items .slider-item:nth-child(3) {
   display: block;
 }
 
