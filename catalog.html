@@ -13,38 +13,38 @@
 </head>
 
 <body class="site">
-  <header class="site__header site__header_catalog header">
-    <nav class="header__nav header-nav">
+  <header class="site__header site__header--catalog header">
+    <nav class="header__nav header-nav" aria-label='Навигация по сайту'>
       <div class="header-nav__logo logo">
-        <a class="logo__link" href="index.html" title="Главная">
+        <a class="logo__link" href="index.html" title="Главная" aria-label='Перейти на главную страницу'>
           <img class="logo__img" src="img/logo/logo-device.svg" alt="Device - Интернет-магазин гаджетов" width="163" height="35">
         </a>
       </div>
       <div class="header-nav__top-menu top-menu">
         <div class="top-menu__search search">
-          <form class="search__form" action="search.html?" method="get">
-            <input class="search__input" type="search" placeholder="Поиск по сайту">
-            <button class="search__button" type="submit">Найти</button>
+          <form class="search__form" action="search.html?" method="get" aria-label='Форма поиска по сайту'>
+            <input class="search__input" type="search" placeholder="Поиск по сайту" aria-label='Введите ваш запрос'>
+            <button class="search__button button" type="submit">Найти</button>
           </form>
         </div>
-        <ul class="top-menu__user user user_auth">
-          <li class="user__item user__item_login">
-            <a class="user__link user__link_login" href="login.html">Войти</a>
+        <ul class="top-menu__user user user--auth" aria-label='Меню пользователя:'>
+          <li class="user__item user__item--login">
+            <a class="user__link user__link--login" href="login.html">Войти</a>
           </li>
-          <li class="user__item user__item_account">
-            <a class="user__link user__link_enter" href="user.html">Валентин Петухов</a>
-            <a class="user__link user__link_logout" href="index.html">Выйти</a>
+          <li class="user__item user__item--account">
+            <a class="user__link user__link--enter" href="user.html" aria-label="Переход на страницу личного кабинета пользователя:">Валентин Петухов</a>
+            <a class="user__link user__link--logout" href="index.html">Выйти</a>
           </li>
         </ul>
-        <div class="top-menu__compare compare">
+        <div class="top-menu__compare compare" aria-label="Сравнение товаров:">
           <a class="compare__link" href="compare.html">Сравнить</a>
         </div>
-        <div class="top-menu__cart cart">
+        <div class="top-menu__cart cart" aria-label="Оформление заказа:">
           <a class="cart__link" href="cart.html">Корзина</a>
         </div>
       </div>
-      <ul class="header-nav__main-menu main-menu">
-        <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="catalog.html">Каталог товаров</a>
+      <ul class="header-nav__main-menu main-menu" aria-label="Главное меню:">
+        <li class="main-menu__item main-menu__item--dropdown" aria-haspopup="true"><a class="main-menu__link" href="catalog.html">Каталог товаров</a>
           <div class="main-menu__catalog-dropdown catalog-dropdown">
             <ul class="catalog-dropdown__list">
               <li class="catalog-dropdown__item">
@@ -199,36 +199,35 @@
   </main>
   <footer class="site__footer footer">
     <div class="footer__container">
-      <div class="footer__logo logo">
+      <div class="footer__logo logo" aria-label="Перейти на главную страницу">
         <a class="logo__link" href="index.html">
-          <img class="logo__img" src="img/logo/logo-device-yellow.svg" alt="Device" width="163" height="35">
-          Главная
+          <img class="logo__img" src="img/logo/logo-device-yellow.svg" alt="Device - Интернет-магазин гаджетов" width="163" height="35">
         </a>
       </div>
-      <ul class="footer__user user user_auth">
-        <li class="user__item user__item_login">
-          <a class="user__link user__link_login" href="login.html">Войти</a>
+      <ul class="footer__user user user--auth" aria-label="Меню пользователя:">
+        <li class="user__item user__item--login">
+          <a class="user__link user__link--login" href="login.html">Войти</a>
         </li>
-        <li class="user__item user__item_account">
-          <a class="user__link user__link_enter" href="user.html">Валентин Петухов</a>
-          <a class="user__link user__link_logout" href="index.html">Выйти</a>
+        <li class="user__item user__item--account">
+          <a class="user__link user__link--enter" href="user.html" aria-label="Переход на страницу личного кабинета пользователя:">Валентин Петухов</a>
+          <a class="user__link user__link--logout" href="index.html">Выйти</a>
         </li>
       </ul>
-      <div class="footer__compare compare">
+      <div class="footer__compare compare" aria-label="Сравнение товаров:">
         <a class="compare__link" href="compare.html">Сравнить</a>
       </div>
-      <div class="footer__cart cart">
+      <div class="footer__cart cart" aria-label="Оформление заказа:">
         <a class="cart__link" href="cart.html">Корзина</a>
       </div>
     </div>
     <div class="footer__container">
-      <address class="footer__address address">
+      <address class="footer__address address" aria-label="Наш адрес:">
         г. Москва, ул. Строителей, 15
       </address>
-      <div class="footer__phone phone">
-        <a class="phone__link" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+      <div class="footer__phone phone" aria-label="Наш телефон:">
+        <a class="phone__link" href="tel:+74954959595">+7 (495) 495-95-95</a>
       </div>
-      <ul class="footer__menu footer-menu">
+      <ul class="footer__menu footer-menu" aria-label="Сервисное меню:">
         <li class="footer-menu__item">
           <a class="footer-menu__link" href="delivery.html">Доставка</a>
         </li>
@@ -241,30 +240,30 @@
       </ul>
     </div>
     <div class="footer__container">
-      <ul class="footer__socials socials">
+      <ul class="footer__socials socials" aria-label="Наши соцсети:">
         <li class="socials__item">
           <a class="socials__link" href="#">
-            <img class="socials__img" src="img/icons/fb.svg" alt="Мы в Facebook" width="32" height="32">
-            Мы в Facebook
+            <img class="socials__img" src="img/icons/fb.svg" alt="" width="32" height="32">
+            <span class='visually-hidden'>Мы в Facebook</span>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link" href="#">
-            <img class="socials__img" src="img/icons/instagram.svg" alt="Мы в Instagram" width="32" height="32">
-            Мы в Instagram
+            <img class="socials__img" src="img/icons/instagram.svg" alt="" width="32" height="32">
+            <span class='visually-hidden'>Мы в Instagram</span>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link" href="#">
-            <img class="socials__img" src="img/icons/twitter.svg" alt="Мы в Twitter" width="32" height="32">
-            Мы в Twitter
+            <img class="socials__img" src="img/icons/twitter.svg" alt="" width="32" height="32">
+            <span class='visually-hidden'>Мы в Twitter</span>
           </a>
         </li>
       </ul>
-      <div class="footer__studio-link studio-link">
+      <div class="footer__studio-link studio-link" aria-label="Информация о разработчике:">
         <a class="studio-link__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-          <img class="studio-link__img" src="img/icons/logo-html.svg" alt="HTML Academy" width="27" height="35">
-          Сделано в HTML Academy
+          <img class="studio-link__img" src="img/icons/logo-html.svg" alt="" width="27" height="35">
+          <span class='visually-hidden'>Сделано в HTML Academy</span>
         </a>
       </div>
     </div>
