@@ -12,9 +12,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class='site'>
+<body class="site">
   <header class="site__header site__header--index header">
-    <nav class="header__nav header-nav" aria-label='Навигация по сайту'>
+    <nav class="header__nav header-nav" aria-label="Навигация по сайту">
       <div class="header-nav__logo logo">
         <a class="logo__link">
           <img class="logo__img" src="img/logo/logo-device.svg" alt="Device - Интернет-магазин гаджетов" width="163" height="35">
@@ -22,12 +22,12 @@
       </div>
       <div class="header-nav__top-menu top-menu">
         <div class="top-menu__search search">
-          <form class="search__form" action="search.html?" method="get" aria-label='Форма поиска по сайту'>
-            <input class="search__input" type="search" placeholder="Поиск по сайту" aria-label='Введите ваш запрос'>
+          <form class="search__form" action="search.html?" method="get" aria-label="Форма поиска по сайту">
+            <input class="search__input" type="search" placeholder="Поиск по сайту" aria-label="Введите ваш запрос">
             <button class="search__button button" type="submit">Найти</button>
           </form>
         </div>
-        <ul class="top-menu__user user user--auth" aria-label='Меню пользователя:'>
+        <ul class="top-menu__user user user--not-auth" aria-label="Меню пользователя:">
           <li class="user__item user__item--login">
             <a class="user__link user__link--login" href="login.html">Войти</a>
           </li>
@@ -80,23 +80,23 @@
       </ul>
     </nav>
   </header>
-  <main class="site__content content">
+  <main class="site__content content" aria-label="Главная страница">
     <h1 class="content__title visually-hidden">Интернет магазин гаджетов Device</h1>
-    <section class="content__index-slider index-slider" aria-label='Показ слайдов'>
+    <section class="content__index-slider index-slider" aria-label="Показ слайдов">
       <h2 class="index-slider__title visually-hidden">Наши лучшие предложения</h2>
       <div class="index-slider__container">
         <input class="index-slider__control-radio" type="radio" name="indexSlider" id="slider-item-1" checked>
-        <label class="index-slider__control-label" for="slider-item-1">Слайд 1</label>
+        <label class="index-slider__control-label" for="slider-item-1" aria-label="Показать Слайд 1">Слайд 1</label>
         <input class="index-slider__control-radio" type="radio" name="indexSlider" id="slider-item-2">
-        <label class="index-slider__control-label" for="slider-item-2">Слайд 2</label>
+        <label class="index-slider__control-label" for="slider-item-2" aria-label="Показать Слайд 2">Слайд 2</label>
         <input class="index-slider__control-radio" type="radio" name="indexSlider" id="slider-item-3">
-        <label class="index-slider__control-label" for="slider-item-3">Слайд 3</label>
+        <label class="index-slider__control-label" for="slider-item-3" aria-label="Показать Слайд 3">Слайд 3</label>
 
-        <ul class="index-slider__list">
-          <li class="index-slider__item index-slider-item" id="slider-item-1" aria-label='Первый слайд:'>
+        <ul class="index-slider__list" aria-label="Список слайдов">
+          <li class="index-slider__item index-slider-item" id="slider-item-1" aria-label="Первый слайд:">
             <h3 class="index-slider-item__title">Делай селфи, как Бен Стиллер!</h3>
             <p class="index-slider-item__descr">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <img class='index-slider-item__img' src="img/slides/slider-1.png" alt="" height="486" width="384">
+            <img class="index-slider-item__img" src="img/slides/slider-1.png" alt="" height="486" width="384">
             <dl class="index-slider-item__prop index-slider-item-prop">
               <dt class="index-slider-item-prop__title">Длина палки</dt>
               <dd class="index-slider-item-prop__descr">8,5 м</dd>
@@ -105,34 +105,34 @@
               <dt class="index-slider-item-prop__title">Материал</dt>
               <dd class="index-slider-item-prop__descr">Карбон</dd>
             </dl>
-            <a class='index-slider-item__link' href="product.html?id=item-x" aria-label='Ознакомиться с предложением'>Подробнее</a>
+            <a class="index-slider-item__link" href="product.html?id=item-x" aria-label="Ознакомиться с предложением">Подробнее</a>
           </li>
-          <li class="index-slider__item index-slider-item" id="slider-item-2" aria-label='Второй слайд:'>
+          <li class="index-slider__item index-slider-item" id="slider-item-2" aria-label="Второй слайд:">
             <h3 class="index-slider-item__title">Худеем правильно!</h3>
             <p class="index-slider-item__descr">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <img class='index-slider-item__img' src="img/slides/slider-2.png" alt="" height="485" width="345">
+            <img class="index-slider-item__img" src="img/slides/slider-2.png" alt="" height="485" width="345">
             <dl class="index-slider-item__prop index-slider-item-prop">
               <dt class="index-slider-item-prop__title">Без подзарядки</dt>
               <dd class="index-slider-item-prop__descr">48 часов</dd>
             </dl>
-            <a class='index-slider-item__link' href="product.html?id=item-y" aria-label='Ознакомиться с предложением'>Подробнее</a>
+            <a class="index-slider-item__link" href="product.html?id=item-y" aria-label="Ознакомиться с предложением">Подробнее</a>
           </li>
-          <li class="index-slider__item index-slider-item" id="slider-item-3" aria-label='Третий слайд:'>
+          <li class="index-slider__item index-slider-item" id="slider-item-3" aria-label="Третий слайд:">
             <h3 class="index-slider-item__title">Порхает как бабочка, жалит как пчела!</h3>
             <p class="index-slider-item__descr">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <img class='index-slider-item__img' src="img/slides/slider-3.png" alt="" height="334" width="526">
+            <img class="index-slider-item__img" src="img/slides/slider-3.png" alt="" height="334" width="526">
             <dl class="index-slider-item__prop index-slider-item-prop">
               <dt class="index-slider-item-prop__title">Дальность полета</dt>
               <dd class="index-slider-item-prop__descr">800 м</dd>
               <dt class="index-slider-item-prop__title">Радиус поражения</dt>
               <dd class="index-slider-item-prop__descr">50 м</dd>
             </dl>
-            <a class='index-slider-item__link' href="product.html?id=item-z" aria-label='Ознакомиться с предложением'>Подробнее</a>
+            <a class="index-slider-item__link" href="product.html?id=item-z" aria-label="Ознакомиться с предложением">Подробнее</a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="content__index-sub index-sub" aria-label='Каталог товаров'>
+    <section class="content__index-sub index-sub" aria-label="Каталог товаров">
       <h2 class="index-sub__title visually-hidden">Товарные категории</h2>
       <ul class="index-sub__list">
         <li class="index-sub__item">
@@ -203,18 +203,18 @@
         </li>
       </ul>
     </section>
-    <section class="content__index-about index-about" aria-label='Информация:'>
+    <section class="content__index-about index-about" aria-label="Информация:">
       <h2 class="index-about__title">О нас</h2>
       <p class="index-about__descr">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
       <p class="index-about__descr">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-      <ul class="index-about__tk-list" aria-label='Перечень транспортных компаний:'>
+      <ul class="index-about__tk-list" aria-label="Перечень транспортных компаний:">
         <li class="index-about__tk-item">Деловые Линии</li>
         <li class="index-about__tk-item">Автотрейдинг</li>
         <li class="index-about__tk-item">ЖелДорЭкспедиция</li>
       </ul>
       <a class="index-about__link" href="about.html">Подробнее о нас</a>
     </section>
-    <section class="content__index-contacts index-contacts" aria-label='Информация:'>
+    <section class="content__index-contacts index-contacts" aria-label="Информация:">
       <h2 class="index-contacts__title">Контакты</h2>
       <p class="index-contacts__descr">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
       <p class="index-contacts__map index-contacts-map">
@@ -272,26 +272,26 @@
         <li class="socials__item">
           <a class="socials__link" href="#">
             <img class="socials__img" src="img/icons/fb.svg" alt="" width="32" height="32">
-            <span class='visually-hidden'>Мы в Facebook</span>
+            <span class="visually-hidden">Мы в Facebook</span>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link" href="#">
             <img class="socials__img" src="img/icons/instagram.svg" alt="" width="32" height="32">
-            <span class='visually-hidden'>Мы в Instagram</span>
+            <span class="visually-hidden">Мы в Instagram</span>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link" href="#">
             <img class="socials__img" src="img/icons/twitter.svg" alt="" width="32" height="32">
-            <span class='visually-hidden'>Мы в Twitter</span>
+            <span class="visually-hidden">Мы в Twitter</span>
           </a>
         </li>
       </ul>
       <div class="footer__studio-link studio-link" aria-label="Информация о разработчике:">
         <a class="studio-link__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
           <img class="studio-link__img" src="img/icons/logo-html.svg" alt="" width="27" height="35">
-          <span class='visually-hidden'>Сделано в HTML Academy</span>
+          <span class="visually-hidden">Сделано в HTML Academy</span>
         </a>
       </div>
     </div>
