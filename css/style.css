@@ -339,6 +339,17 @@ input:checked + .button--tab-select {
   display: none;
 }
 
+.search__button:focus {
+  display: inline-block;
+}
+
+.search__button:active {
+  display: inline-block;
+}
+
+
+
+
 
 /* блок Пользовательское меню */
 
