@@ -24,7 +24,7 @@
       <div class="site-header__search search">
         <form class="search__form" action="catalog.html?" method="get" aria-label="Форма поиска по сайту">
           <input class="search__input" type="search" name="searchRequest" placeholder="Поиск по сайту" aria-label="Введите ваш запрос">
-          <button class="search__button button" type="submit">Найти</button>
+          <button class="search__button button button--search" type="submit">Найти</button>
         </form>
       </div>
       <ul class="site-header__user user user--not-auth" aria-label="Меню пользователя:">
@@ -107,7 +107,7 @@
               <dt class="index-slider-item-prop__title">Материал</dt>
               <dd class="index-slider-item-prop__descr">Карбон</dd>
             </dl>
-            <a class="index-slider-item__link" href="product.html?id=item-x" aria-label="Ознакомиться с предложением">Подробнее</a>
+            <a class="index-slider-item__link button button--link" href="product.html?id=item-x" aria-label="Ознакомиться с предложением">Подробнее</a>
           </li>
           <li class="index-slider__item index-slider-item" id="slider-item-2" aria-label="Второй слайд:">
             <h3 class="index-slider-item__title">Худеем правильно!</h3>
@@ -117,7 +117,7 @@
               <dt class="index-slider-item-prop__title">Без подзарядки</dt>
               <dd class="index-slider-item-prop__descr">48 часов</dd>
             </dl>
-            <a class="index-slider-item__link" href="product.html?id=item-y" aria-label="Ознакомиться с предложением">Подробнее</a>
+            <a class="index-slider-item__link button button--link" href="product.html?id=item-y" aria-label="Ознакомиться с предложением">Подробнее</a>
           </li>
           <li class="index-slider__item index-slider-item" id="slider-item-3" aria-label="Третий слайд:">
             <h3 class="index-slider-item__title">Порхает как бабочка, жалит как пчела!</h3>
@@ -129,7 +129,7 @@
               <dt class="index-slider-item-prop__title">Радиус поражения</dt>
               <dd class="index-slider-item-prop__descr">50 м</dd>
             </dl>
-            <a class="index-slider-item__link" href="product.html?id=item-z" aria-label="Ознакомиться с предложением">Подробнее</a>
+            <a class="index-slider-item__link button button--link" href="product.html?id=item-z" aria-label="Ознакомиться с предложением">Подробнее</a>
           </li>
         </ul>
       </div>
@@ -161,11 +161,13 @@
       <h2 class="index-services__title visually-hidden">Наши услуги</h2>
       <div class="index-services__container">
         <input class="index-services__control-radio" type="radio" name="indexServices" id="services-item-1-control" checked>
-        <label class="index-services__control-label" for="services-item-1-control" aria-label="Выбрать услугу Доставка">Доставка</label>
+        <label class="index-services__control-label button button--tab-select" for="services-item-1-control" aria-label="Выбрать услугу Доставка">Доставка</label>
         <input class="index-services__control-radio" type="radio" name="indexServices" id="services-item-2-control">
-        <label class="index-services__control-label" for="services-item-2-control" aria-label="Выбрать услугу Гарантия">Гарантия</label>
+        <label class="index-services__control-label button button--tab-select" for="services-item-2-control" aria-label="Выбрать услугу Гарантия">Гарантия</label>
         <input class="index-services__control-radio" type="radio" name="indexServices" id="services-item-3-control">
-        <label class="index-services__control-label" for="services-item-3-control" aria-label="Выбрать услугу Кредит">Кредит</label>
+        <label class="index-services__control-label button button--tab-select" for="services-item-3-control" aria-label="Выбрать услугу Кредит">Кредит</label>
+
+
         <ul class="index-services__list" aria-label="Перечень услуг">
           <li class="index-services__item index-services-item" id="services-item-1">
             <h3 class="index-services-item__title">Доставка</h3>
@@ -214,7 +216,7 @@
         <li class="index-about__tk-item">Автотрейдинг</li>
         <li class="index-about__tk-item">ЖелДорЭкспедиция</li>
       </ul>
-      <a class="index-about__link" href="about.html">Подробнее о нас</a>
+      <a class="index-about__link  button button--wide-link" href="about.html">Подробнее о нас</a>
     </section>
     <section class="site-content__index-contacts index-contacts" aria-label="Информация:">
       <h2 class="index-contacts__title">Контакты</h2>
@@ -224,7 +226,7 @@
           <img class="index-contacts-map__img" src="img/map.jpg" alt="Наш адрес: г. Москва, ул. Строителей, 15" width="560" height="222">
         </a>
       </p>
-      <a class="index-contacts__link" href="contacts.html">Напишите нам</a>
+      <a class="index-contacts__link button button--wide-link" href="contacts.html">Напишите нам</a>
     </section>
   </main>
   <footer class="site-footer">
@@ -300,22 +302,22 @@
   </footer>
   <section class="site-modals">
     <div class="site-modals__modal modal modal--feedback">
-      <h2 class="modal__title">Форма обратной связи</h2>
-      <form class="modal__form" action="/feedback.html?" method="post">
-        <label class="modal__label" for="name">Ваше имя:</label>
-        <input class="modal__input" type="text" name="name" id="name" placeholder="Имя Фамилия">
-        <label class="modal__label" for="email">Ваш e-mail:</label>
-        <input class="modal__input" type="email" name="email" id="email" placeholder="email@example.com">
-        <label class="modal__label" for="comment">Текст письма:</label>
-        <textarea class="modal__textarea" name="comment" id="comment" rows="6" placeholder="В свободной форме"></textarea>
-        <button class="modal__button modal__button--submit button" type="submit">Отправить</button>
+      <h2 class="modal__title visually-hidden">Форма обратной связи</h2>
+      <form class="modal__content feedback-form" action="/feedback.html?" method="post">
+        <label class="feedback-form__label" for="name">Ваше имя:</label>
+        <input class="feedback-form__input" type="text" name="name" id="name" placeholder="Имя Фамилия">
+        <label class="feedback-form__label" for="email">Ваш e-mail:</label>
+        <input class="feedback-form__input" type="email" name="email" id="email" placeholder="email@example.com">
+        <label class="feedback-form__label" for="comment">Текст письма:</label>
+        <textarea class="feedback-form__textarea" name="comment" id="comment" rows="6" placeholder="В свободной форме"></textarea>
+        <button class="feedback-form__button button" type="submit">Отправить</button>
       </form>
-      <button class="modal__button modal__button--close button js-modalButtonClose" type="button">Закрыть</button>
+      <button class="modal__button button button--close js-modalButtonClose" type="button" title="Закрыть">Закрыть</button>
     </div>
     <div class="site-modals__modal modal modal--map">
-      <h2 class="modal__title">Как нас найти</h2>
-      <img class="modal__img" src="img/map-big.jpg" alt="Наш адрес: г. Москва, ул. Строителей, 15" width="991" height="591">
-      <button class="modal__button modal__button--close button js-modalButtonClose" type="button">Закрыть</button>
+      <h2 class="modal__title visually-hidden">Как нас найти</h2>
+      <img class="modal__content" src="img/map-big.jpg" alt="Наш адрес: г. Москва, ул. Строителей, 15" width="991" height="591">
+      <button class="modal__button button button--close js-modalButtonClose" type="button" title="Закрыть">Закрыть</button>
     </div>
   </section>
   <script src="js/script.js"></script>
