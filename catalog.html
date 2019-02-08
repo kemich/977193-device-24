@@ -99,34 +99,34 @@
     <div class="site-content__row-container">
       <section class="site-content__products-filter products-filter">
         <h2 class="products-filter__title">Фильтр:</h2>
-        <form class="products-filter__form" action="catalog.html?" method="get">
-          <fieldset class="products-filter__fieldset">
-            <legend class="products-filter__fieldset-legend">Стоимость</legend>
+        <form class="products-filter__form filter-form" action="catalog.html?" method="get">
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">Стоимость</legend>
             <!-- здесь будет крутой ползунок-->
           </fieldset>
-          <fieldset class="products-filter__fieldset">
-            <legend class="products-filter__fieldset-legend">Цвет</legend>
-            <label class="products-filter__label"><input class="products-filter__checkbox products-filter__checkbox--checked" type="checkbox" name="colorBlack" checked>Черный</label>
-            <label class="products-filter__label"><input class="products-filter__checkbox" type="checkbox" name="colorWhite">Белый</label>
-            <label class="products-filter__label"><input class="products-filter__checkbox products-filter__checkbox--checked" type="checkbox" name="colorBlue" checked>Синий</label>
-            <label class="products-filter__label"><input class="products-filter__checkbox products-filter__checkbox--checked" type="checkbox" name="colorRad" checked>Красный</label>
-            <label class="products-filter__label"><input class="products-filter__checkbox" type="checkbox" name="colorPink">Розовый</label>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">Цвет</legend>
+            <label class="filter-form__label"><input class="filter-form__checkbox" type="checkbox" name="colorBlack" checked>Черный</label>
+            <label class="filter-form__label"><input class="filter-form__checkbox" type="checkbox" name="colorWhite">Белый</label>
+            <label class="filter-form__label"><input class="filter-form__checkbox" type="checkbox" name="colorBlue" checked>Синий</label>
+            <label class="filter-form__label"><input class="filter-form__checkbox" type="checkbox" name="colorRad" checked>Красный</label>
+            <label class="filter-form__label"><input class="filter-form__checkbox" type="checkbox" name="colorPink">Розовый</label>
           </fieldset>
-          <fieldset class="products-filter__fieldset">
-            <legend class="products-filter__fieldset-legend">Bluetooth</legend>
-            <label class="products-filter__label"><input class="products-filter__radio products-filter__radio--checked" type="radio" name="bluetooth" checked>Есть</label>
-            <label class="products-filter__label"><input class="products-filter__radio" type="radio" name="bluetooth">Нет</label>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">Bluetooth</legend>
+            <label class="filter-form__label"><input class="filter-form__radio" type="radio" name="bluetooth" checked>Есть</label>
+            <label class="filter-form__label"><input class="filter-form__radio" type="radio" name="bluetooth">Нет</label>
           </fieldset>
-          <button class="products-filter__button products-filter__button--submit button" type="submit">Показать</button>
+          <button class="filter-form__button button" type="submit">Показать</button>
         </form>
       </section>
       <div class="site-content__col-container">
         <section class="site-content__products-sort products-sort">
           <h2 class="products-sort__title">Сортировка:</h2>
           <div class="products-sort__types">
-            <a class="products-sort__link products-sort__link--sort-price" href="catalog.html?sort=price">По цене</a>
-            <a class="products-sort__link products-sort__link--sort-type" href="catalog.html?sort=type">По типу</a>
-            <a class="products-sort__link products-sort__link--sort-popularity" href="catalog.html?sort=popularity">По популярности</a>
+            <a class="products-sort__link" href="catalog.html?sort=price">По цене</a>
+            <a class="products-sort__link" href="catalog.html?sort=type">По типу</a>
+            <a class="products-sort__link" href="catalog.html?sort=popularity">По популярности</a>
             <a class="products-sort__link products-sort__link--sort-direct" href="catalog.html?sort=direct"><span>В прямом порядке</span></a>
             <a class="products-sort__link products-sort__link--sort-reverse" href="catalog.html?sort=reverse"><span>В обратном порядке</span></a>
           </div>
@@ -140,8 +140,8 @@
               </h3>
               <img class="products-item__img" src="img/products/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
               <b class="products-item__price" aria-label="Цена товара:">500 руб.</b>
-              <a class="products-item__button products-item__button--buy button js-buy" href="cart.html" aria-label="Оформить заказ:">В корзину</a>
-              <a class="products-item__button products-item__button--compare button button--compare js-compare" href="compare.html">Добавить к сравнению</a>
+              <a class="products-item__button button" href="cart.html?add=true&id=item-1" aria-label="Оформить заказ:">В корзину</a>
+              <a class="products-item__button button button--compare" href="compare.html?add=true&id=item-1">Добавить к сравнению</a>
             </li>
             <li class="products__item products-item" aria-label="Товар 2">
               <h3 class="products-item__title" aria-label="Название:">
@@ -149,8 +149,8 @@
               </h3>
               <img class="products-item__img" src="img/products/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
               <b class="products-item__price" aria-label="Цена товара:">1500 руб.</b>
-              <a class="products-item__button products-item__button--buy button js-buy" href="cart.html" aria-label="Оформить заказ:">В корзину</a>
-              <a class="products-item__button products-item__button--compare button button--compare js-compare" href="compare.html">Добавить к сравнению</a>
+              <a class="products-item__button button" href="cart.html?add=true&id=item-2" aria-label="Оформить заказ:">В корзину</a>
+              <a class="products-item__button button button--compare" href="compare.html?add=true&id=item-2">Добавить к сравнению</a>
             </li>
             <li class="products__item products-item" aria-label="Товар 3">
               <h3 class="products-item__title" aria-label="Название:">
@@ -158,8 +158,8 @@
               </h3>
               <img class="products-item__img" src="img/products/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
               <b class="products-item__price" aria-label="Цена товара:">2500 руб.</b>
-              <a class="products-item__button products-item__button--buy button js-buy" href="cart.html" aria-label="Оформить заказ:">В корзину</a>
-              <a class="products-item__button products-item__button--compare button button--compare js-compare" href="compare.html">Добавить к сравнению</a>
+              <a class="products-item__button button" href="cart.html?add=true&id=item-3" aria-label="Оформить заказ:">В корзину</a>
+              <a class="products-item__button button button--compare" href="compare.html?add=true&id=item-3">Добавить к сравнению</a>
             </li>
             <li class="products__item products-item" aria-label="Товар 4">
               <h3 class="products-item__title" aria-label="Название:">
@@ -167,8 +167,8 @@
               </h3>
               <img class="products-item__img" src="img/products/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
               <b class="products-item__price" aria-label="Цена товара:">4900 руб.</b>
-              <a class="products-item__button products-item__button--buy button js-buy" href="cart.html" aria-label="Оформить заказ:">В корзину</a>
-              <a class="products-item__button products-item__button--compare button button--compare js-compare" href="compare.html">Добавить к сравнению</a>
+              <a class="products-item__button button" href="cart.html?add=true&id=item-4" aria-label="Оформить заказ:">В корзину</a>
+              <a class="products-item__button button button--compare" href="compare.html?add=true&id=item-4">Добавить к сравнению</a>
             </li>
           </ul>
         </section>
@@ -196,13 +196,14 @@
     </div>
   </main>
   <footer class="site-footer">
+    <div class="site-footer__wrap">
     <div class="site-footer__container">
-      <div class="site-footer__logo logo logo--footer">
+      <div class="site-footer__logo logo">
         <a class="logo__link" href="index.html">
           <img class="logo__img" src="img/logo/logo-device-yellow.svg" alt="Логотип интернет-магазина гаджетов Device" width="163" height="35">
         </a>
       </div>
-      <ul class="site-footer__user user user--footer user--auth" aria-label="Меню пользователя:">
+      <ul class="site-footer__user user user--auth" aria-label="Меню пользователя:">
         <li class="user__item user__item--login">
           <a class="user__link user__link--login" href="login.html">Войти</a>
         </li>
@@ -211,10 +212,10 @@
           <a class="user__link user__link--logout" href="index.html">Выйти</a>
         </li>
       </ul>
-      <div class="site-footer__compare compare compare--footer" aria-label="Сравнение товаров:">
+      <div class="site-footer__compare compare" aria-label="Сравнение товаров:">
         <a class="compare__link" href="compare.html">Сравнить</a>
       </div>
-      <div class="site-footer__cart cart cart--footer" aria-label="Оформление заказа:">
+      <div class="site-footer__cart cart" aria-label="Оформление заказа:">
         <a class="cart__link" href="cart.html">Корзина</a>
       </div>
     </div>
@@ -240,30 +241,27 @@
     <div class="site-footer__container">
       <ul class="site-footer__socials socials" aria-label="Наши соцсети:">
         <li class="socials__item">
-          <a class="socials__link" href="#">
-            <img class="socials__img" src="img/icons/fb.svg" alt="" width="32" height="32">
-            <span class="visually-hidden">Мы в Facebook</span>
+          <a class="socials__link" href="#" title="Мы в Facebook">
+            <img class="socials__img" src="img/icons/fb.svg" alt="Мы в Facebook" width="32" height="32">
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href="#">
-            <img class="socials__img" src="img/icons/instagram.svg" alt="" width="32" height="32">
-            <span class="visually-hidden">Мы в Instagram</span>
+          <a class="socials__link" href="#" title="Мы в Instagram">
+            <img class="socials__img" src="img/icons/instagram.svg" alt="Мы в Instagram" width="32" height="32">
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href="#">
-            <img class="socials__img" src="img/icons/twitter.svg" alt="" width="32" height="32">
-            <span class="visually-hidden">Мы в Twitter</span>
+          <a class="socials__link" href="#" title="Мы в Twitter">
+            <img class="socials__img" src="img/icons/twitter.svg" alt="Мы в Twitter" width="32" height="32">
           </a>
         </li>
       </ul>
       <div class="site-footer__studio-link studio-link" aria-label="Информация о разработчике:">
-        <a class="studio-link__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-          <img class="studio-link__img" src="img/icons/logo-html.svg" alt="" width="27" height="35">
-          <span class="visually-hidden">Сделано в HTML Academy</span>
+        <a class="studio-link__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" title="Сделано в HTML Academy">
+          <img class="studio-link__img" src="img/icons/logo-html.svg" alt="Сделано в HTML Academy" width="27" height="35">
         </a>
       </div>
+     </div>
     </div>
   </footer>
   <script src="js/script.js"></script>
