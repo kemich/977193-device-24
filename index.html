@@ -87,49 +87,57 @@
     <section class="site-content__index-slider index-slider" aria-label="Показ слайдов">
       <h2 class="index-slider__title visually-hidden">Наши лучшие предложения</h2>
       <div class="index-slider__container">
-        <input class="index-slider__control-radio" type="radio" name="indexSlider" id="slider-item-1-control" checked>
-        <label class="index-slider__control-label" for="slider-item-1-control" aria-label="Показать Слайд 1">Слайд 1</label>
-        <input class="index-slider__control-radio" type="radio" name="indexSlider" id="slider-item-2-control">
-        <label class="index-slider__control-label" for="slider-item-2-control" aria-label="Показать Слайд 2">Слайд 2</label>
-        <input class="index-slider__control-radio" type="radio" name="indexSlider" id="slider-item-3-control">
-        <label class="index-slider__control-label" for="slider-item-3-control" aria-label="Показать Слайд 3">Слайд 3</label>
+        <input class="visually-hidden index-slider__control-radio" type="radio" name="indexSlider" id="slider-item-1-control" checked>
+        <label class="index-slider__control-label" for="slider-item-1-control" aria-label="Показать Слайд 1"><span class="visually-hidden">Слайд 1</span></label>
+        <input class="visually-hidden index-slider__control-radio" type="radio" name="indexSlider" id="slider-item-2-control">
+        <label class="index-slider__control-label" for="slider-item-2-control" aria-label="Показать Слайд 2"><span class="visually-hidden">Слайд 2</span></label>
+        <input class="visually-hidden index-slider__control-radio" type="radio" name="indexSlider" id="slider-item-3-control">
+        <label class="index-slider__control-label" for="slider-item-3-control" aria-label="Показать Слайд 3"><span class="visually-hidden">Слайд 3</span></label>
 
         <ul class="index-slider__list" aria-label="Список слайдов">
           <li class="index-slider__item index-slider-item" id="slider-item-1" aria-label="Первый слайд:">
-            <h3 class="index-slider-item__title">Делай селфи, как Бен Стиллер!</h3>
-            <p class="index-slider-item__descr">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+
+            <div class="index-slider-item__content">
+              <h3 class="index-slider-item__title">Делай селфи, как Бен Стиллер!</h3>
+              <p class="index-slider-item__descr">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <dl class="index-slider-item__prop index-slider-item-prop">
+                <dt class="index-slider-item-prop__title">Длина палки</dt>
+                <dd class="index-slider-item-prop__descr">8,5 м</dd>
+                <dt class="index-slider-item-prop__title">Вес палки</dt>
+                <dd class="index-slider-item-prop__descr">5 кг</dd>
+                <dt class="index-slider-item-prop__title">Материал</dt>
+                <dd class="index-slider-item-prop__descr">Карбон</dd>
+              </dl>
+              <a class="index-slider-item__link button button--link" href="product.html?id=item-x" aria-label="Ознакомиться с предложением">Подробнее</a>
+            </div>
             <img class="index-slider-item__img" src="img/slides/slider-1.png" alt="" height="486" width="384">
-            <dl class="index-slider-item__prop index-slider-item-prop">
-              <dt class="index-slider-item-prop__title">Длина палки</dt>
-              <dd class="index-slider-item-prop__descr">8,5 м</dd>
-              <dt class="index-slider-item-prop__title">Вес палки</dt>
-              <dd class="index-slider-item-prop__descr">5 кг</dd>
-              <dt class="index-slider-item-prop__title">Материал</dt>
-              <dd class="index-slider-item-prop__descr">Карбон</dd>
-            </dl>
-            <a class="index-slider-item__link button button--link" href="product.html?id=item-x" aria-label="Ознакомиться с предложением">Подробнее</a>
           </li>
           <li class="index-slider__item index-slider-item" id="slider-item-2" aria-label="Второй слайд:">
-            <h3 class="index-slider-item__title">Худеем правильно!</h3>
-            <p class="index-slider-item__descr">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <div class="index-slider-item__content">
+              <h3 class="index-slider-item__title">Худеем правильно!</h3>
+              <p class="index-slider-item__descr">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <dl class="index-slider-item__prop index-slider-item-prop">
+                <dt class="index-slider-item-prop__title">Без подзарядки</dt>
+                <dd class="index-slider-item-prop__descr">48 часов</dd>
+              </dl>
+              <a class="index-slider-item__link button button--link" href="product.html?id=item-y" aria-label="Ознакомиться с предложением">Подробнее</a>
+            </div>
             <img class="index-slider-item__img" src="img/slides/slider-2.png" alt="" height="485" width="345">
-            <dl class="index-slider-item__prop index-slider-item-prop">
-              <dt class="index-slider-item-prop__title">Без подзарядки</dt>
-              <dd class="index-slider-item-prop__descr">48 часов</dd>
-            </dl>
-            <a class="index-slider-item__link button button--link" href="product.html?id=item-y" aria-label="Ознакомиться с предложением">Подробнее</a>
           </li>
           <li class="index-slider__item index-slider-item" id="slider-item-3" aria-label="Третий слайд:">
-            <h3 class="index-slider-item__title">Порхает как бабочка, жалит как пчела!</h3>
-            <p class="index-slider-item__descr">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <div class="index-slider-item__content">
+              <h3 class="index-slider-item__title">Порхает как бабочка, жалит как пчела!</h3>
+              <p class="index-slider-item__descr">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+
+              <dl class="index-slider-item__prop index-slider-item-prop">
+                <dt class="index-slider-item-prop__title">Дальность полета</dt>
+                <dd class="index-slider-item-prop__descr">800 м</dd>
+                <dt class="index-slider-item-prop__title">Радиус поражения</dt>
+                <dd class="index-slider-item-prop__descr">50 м</dd>
+              </dl>
+              <a class="index-slider-item__link button button--link" href="product.html?id=item-z" aria-label="Ознакомиться с предложением">Подробнее</a>
+            </div>
             <img class="index-slider-item__img" src="img/slides/slider-3.png" alt="" height="334" width="526">
-            <dl class="index-slider-item__prop index-slider-item-prop">
-              <dt class="index-slider-item-prop__title">Дальность полета</dt>
-              <dd class="index-slider-item-prop__descr">800 м</dd>
-              <dt class="index-slider-item-prop__title">Радиус поражения</dt>
-              <dd class="index-slider-item-prop__descr">50 м</dd>
-            </dl>
-            <a class="index-slider-item__link button button--link" href="product.html?id=item-z" aria-label="Ознакомиться с предложением">Подробнее</a>
           </li>
         </ul>
       </div>
@@ -138,50 +146,51 @@
       <h2 class="index-sub__title visually-hidden">Товарные категории</h2>
       <ul class="index-sub__list">
         <li class="index-sub__item">
-          <a class="index-sub__link" href="catalog.html?id=item-1">Виртуальная реальность</a>
+          <a class="index-sub__link" href="catalog.html?id=item-1"><span>Виртуальная реальность</span></a>
         </li>
         <li class="index-sub__item">
-          <a class="index-sub__link" href="catalog.html?id=item-2">Моноподы для селфи</a>
+          <a class="index-sub__link" href="catalog.html?id=item-2"><span>Моноподы для селфи</span></a>
         </li>
         <li class="index-sub__item">
-          <a class="index-sub__link" href="catalog.html?id=item-3">Экшн камеры</a>
+          <a class="index-sub__link" href="catalog.html?id=item-3"><span>Экшн камеры</span></a>
         </li>
         <li class="index-sub__item">
-          <a class="index-sub__link" href="catalog.html?id=item-4">Фитнес браслеты</a>
+          <a class="index-sub__link" href="catalog.html?id=item-4"><span>Фитнес браслеты</span></a>
         </li>
         <li class="index-sub__item">
-          <a class="index-sub__link" href="catalog.html?id=item-5">Умные часы</a>
+          <a class="index-sub__link" href="catalog.html?id=item-5"><span>Умные часы</span></a>
         </li>
         <li class="index-sub__item">
-          <a class="index-sub__link" href="catalog.html?id=item-6">Квадрокоптеры</a>
+          <a class="index-sub__link" href="catalog.html?id=item-6"><span>Квадрокоптеры</span></a>
         </li>
       </ul>
     </section>
     <section class="site-content__index-services index-services">
       <h2 class="index-services__title visually-hidden">Наши услуги</h2>
       <div class="index-services__container">
-        <input class="index-services__control-radio" type="radio" name="indexServices" id="services-item-1-control" checked>
-        <label class="index-services__control-label button button--tab-select" for="services-item-1-control" aria-label="Выбрать услугу Доставка">Доставка</label>
-        <input class="index-services__control-radio" type="radio" name="indexServices" id="services-item-2-control">
-        <label class="index-services__control-label button button--tab-select" for="services-item-2-control" aria-label="Выбрать услугу Гарантия">Гарантия</label>
-        <input class="index-services__control-radio" type="radio" name="indexServices" id="services-item-3-control">
-        <label class="index-services__control-label button button--tab-select" for="services-item-3-control" aria-label="Выбрать услугу Кредит">Кредит</label>
+        <div class="index-services__control">
+          <input class="visually-hidden index-services__control-radio" type="radio" name="indexServices" id="services-item-1-control" checked>
+          <label class="index-services__control-label button button--tab-select" for="services-item-1-control" aria-label="Выбрать услугу Доставка">Доставка</label>
+          <input class="visually-hidden index-services__control-radio" type="radio" name="indexServices" id="services-item-2-control">
+          <label class="index-services__control-label button button--tab-select" for="services-item-2-control" aria-label="Выбрать услугу Гарантия">Гарантия</label>
+          <input class="visually-hidden index-services__control-radio" type="radio" name="indexServices" id="services-item-3-control">
+          <label class="index-services__control-label button button--tab-select" for="services-item-3-control" aria-label="Выбрать услугу Кредит">Кредит</label>
 
-
-        <ul class="index-services__list" aria-label="Перечень услуг">
-          <li class="index-services__item index-services-item" id="services-item-1">
-            <h3 class="index-services-item__title">Доставка</h3>
-            <p class="index-services-item__descr">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </li>
-          <li class="index-services__item index-services-item" id="services-item-2">
-            <h3 class="index-services-item__title">Гарантия</h3>
-            <p class="index-services-item__descr">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
-          </li>
-          <li class="index-services__item index-services-item" id="services-item-3">
-            <h3 class="index-services-item__title">Кредит</h3>
-            <p class="index-services-item__descr">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-          </li>
-        </ul>
+          <ul class="index-services__list" aria-label="Перечень услуг">
+            <li class="index-services__item index-services-item" id="services-item-1">
+              <h3 class="index-services-item__title">Доставка</h3>
+              <p class="index-services-item__descr">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </li>
+            <li class="index-services__item index-services-item" id="services-item-2">
+              <h3 class="index-services-item__title">Гарантия</h3>
+              <p class="index-services-item__descr">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+            </li>
+            <li class="index-services__item index-services-item" id="services-item-3">
+              <h3 class="index-services-item__title">Кредит</h3>
+              <p class="index-services-item__descr">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="site-content__index-brands index-brands">
@@ -198,7 +207,7 @@
           </a>
         </li>
         <li class="index-brands__item">
-          <a class="index-brands__link" href="brand.html?id=item-3"><img src="img/brands/brand-3-color.jpg" alt="GoPro" width="260" height="100"></a>
+          <a class="index-brands__link" href="brand.html?id=item-3"><img class="index-brands__img" src="img/brands/brand-3-color.jpg" alt="GoPro" width="260" height="100"></a>
         </li>
         <li class="index-brands__item">
           <a class="index-brands__link" href="brand.html?id=item-4">
@@ -207,27 +216,30 @@
         </li>
       </ul>
     </section>
-    <section class="site-content__index-about index-about" aria-label="Информация:">
-      <h2 class="index-about__title">О нас</h2>
-      <p class="index-about__descr">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <p class="index-about__descr">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-      <ul class="index-about__tk-list" aria-label="Перечень транспортных компаний:">
-        <li class="index-about__tk-item">Деловые Линии</li>
-        <li class="index-about__tk-item">Автотрейдинг</li>
-        <li class="index-about__tk-item">ЖелДорЭкспедиция</li>
-      </ul>
-      <a class="index-about__link  button button--wide-link" href="about.html">Подробнее о нас</a>
-    </section>
-    <section class="site-content__index-contacts index-contacts" aria-label="Информация:">
-      <h2 class="index-contacts__title">Контакты</h2>
-      <p class="index-contacts__descr">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <p class="index-contacts__map index-contacts-map">
-        <a class="index-contacts-map__link" href="map.html">
-          <img class="index-contacts-map__img" src="img/map.jpg" alt="Наш адрес: г. Москва, ул. Строителей, 15" width="560" height="222">
-        </a>
-      </p>
-      <a class="index-contacts__link button button--wide-link" href="contacts.html">Напишите нам</a>
-    </section>
+
+    <div class="site-content__container">
+      <section class="site-content__index-about index-about" aria-label="Информация:">
+        <h2 class="index-about__title">О нас</h2>
+        <p class="index-about__descr">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="index-about__descr">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul class="index-about__tk-list" aria-label="Перечень транспортных компаний:">
+          <li class="index-about__tk-item">Деловые Линии</li>
+          <li class="index-about__tk-item">Автотрейдинг</li>
+          <li class="index-about__tk-item">ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="index-about__link  button button--wide-link" href="about.html">Подробнее о нас</a>
+      </section>
+      <section class="site-content__index-contacts index-contacts" aria-label="Информация:">
+        <h2 class="index-contacts__title">Контакты</h2>
+        <p class="index-contacts__descr">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <p class="index-contacts__map index-contacts-map">
+          <a class="index-contacts-map__link" href="map.html">
+            <img class="index-contacts-map__img" src="img/map.jpg" alt="Наш адрес: г. Москва, ул. Строителей, 15" width="560" height="222">
+          </a>
+        </p>
+        <a class="index-contacts__link button button--wide-link" href="contacts.html">Напишите нам</a>
+      </section>
+    </div>
   </main>
   <footer class="site-footer">
     <div class="site-footer__wrap">
@@ -302,19 +314,33 @@
     <div class="site-modals__modal modal modal--feedback">
       <h2 class="modal__title visually-hidden">Форма обратной связи</h2>
       <form class="modal__content feedback-form" action="/feedback.html?" method="post">
-        <label class="feedback-form__label" for="name">Ваше имя:</label>
-        <input class="feedback-form__input" type="text" name="name" id="name" placeholder="Имя Фамилия">
-        <label class="feedback-form__label" for="email">Ваш e-mail:</label>
-        <input class="feedback-form__input" type="email" name="email" id="email" placeholder="email@example.com">
-        <label class="feedback-form__label" for="comment">Текст письма:</label>
-        <textarea class="feedback-form__textarea" name="comment" id="comment" rows="6" placeholder="В свободной форме"></textarea>
-        <button class="feedback-form__button button" type="submit">Отправить</button>
+
+        <div class="feedback-form__row">
+          <div class="feedback-form__container">
+            <label class="feedback-form__label" for="name">Ваше имя:</label>
+            <input class="feedback-form__input" type="text" name="name" id="name" placeholder="Имя Фамилия" disabled>
+          </div>
+
+          <div class="feedback-form__container">
+            <label class="feedback-form__label" for="email">Ваш e-mail:</label>
+            <input class="feedback-form__input" type="email" name="email" id="email" placeholder="email@example.com">
+          </div>
+        </div>
+        <div class="feedback-form__row">
+          <div class="feedback-form__container">
+            <label class="feedback-form__label" for="comment">Текст письма:</label>
+            <textarea class="feedback-form__textarea" name="comment" id="comment" rows="6" placeholder="В свободной форме"></textarea>
+          </div>
+        </div>
+        <div class="feedback-form__row">
+          <button class="feedback-form__button button" type="submit">Отправить</button>
+        </div>
       </form>
       <button class="modal__button button button--close" type="button" title="Закрыть"><span class='visually-hidden'>Закрыть</span></button>
     </div>
     <div class="site-modals__modal modal modal--map">
       <h2 class="modal__title visually-hidden">Как нас найти</h2>
-      <img class="modal__content" src="img/map-big.jpg" alt="Наш адрес: г. Москва, ул. Строителей, 15" width="991" height="591">
+      <img class="modal__content" src="img/map-big.jpg" alt="Наш адрес: г. Москва, ул. Строителей, 15" width="960" height="555">
       <button class="modal__button button button--close" type="button" title="Закрыть"><span class='visually-hidden'>Закрыть</span></button>
     </div>
   </section>
