@@ -1450,6 +1450,19 @@ input:checked + .button--tab-select {
   font-size: 16px;
   font-weight: 800;
   line-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.index-about__tk-item::before {
+  content: "";
+  background-image: url(../img/icons/list-point.svg);
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 8px;
+  margin-right: 20px;
 }
 
 .index-about__link {
@@ -2300,6 +2313,13 @@ input:checked + .button--tab-select {
   width: 1160px;
 }
 
+.site-content__bg-effects {
+  width: 100%;
+  background-image: linear-gradient(to right, #dcdcdc, #dcdcdc 50%, #ebebeb 50%, #ebebeb), linear-gradient(to right, #eeeeee, #eeeeee 50%, #ffffff 50%, #ffffff);
+  background-size: 100% 70px, 100% 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 0px top 0px, right 0px top 70px;
+}
 
 .site-content__wrap {
   margin: auto;
@@ -2310,6 +2330,7 @@ input:checked + .button--tab-select {
 
 .site-content__col-container {
   width: 830px;
+  background-color: #ffffff;
 }
 
 
@@ -2363,10 +2384,14 @@ input:checked + .button--tab-select {
 
 .site-footer__compare {
   padding-left: 65px;
+  display: flex;
+  align-items: center;
 }
 
 .site-footer__cart {
   padding-left: 65px;
+  display: flex;
+  align-items: center;
 }
 
 
