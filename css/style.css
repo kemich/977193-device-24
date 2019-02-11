@@ -475,10 +475,7 @@ input:checked + .button--tab-select {
 
 /** Блок сравнение **/
 
-.compare {
-  display: flex;
-  align-items: center;
-}
+.compare {}
 
 .compare::before {
   content: "";
@@ -545,10 +542,7 @@ input:checked + .button--tab-select {
 
 /** Блок Корзина **/
 
-.cart {
-  display: flex;
-  align-items: center;
-}
+.cart {}
 
 .cart::before {
   content: "";
@@ -1671,12 +1665,15 @@ input:checked + .button--tab-select {
   background-image: url(../img/icons/checkbox-on.svg);
 }
 
-.filter-form__checkbox:hover + .filter-form__label, .filter-form__checkbox:focus + .filter-form__label {
+.filter-form__checkbox:hover + .filter-form__label,
+.filter-form__checkbox:focus + .filter-form__label {
   opacity: 0.6;
 }
+
 .filter-form__checkbox:disabled + .filter-form__label {
   opacity: 0.25;
 }
+
 .filter-form__label {
   color: rgb(0, 0, 0);
   font-size: 14px;
@@ -1705,12 +1702,15 @@ input:checked + .button--tab-select {
   background-image: url(../img/icons/radio-on.svg);
 }
 
-.filter-form__radio:hover + .filter-form__label, .filter-form__radio:focus + .filter-form__label {
+.filter-form__radio:hover + .filter-form__label,
+.filter-form__radio:focus + .filter-form__label {
   opacity: 0.6;
 }
+
 .filter-form__radio:disabled + .filter-form__label {
   opacity: 0.25;
 }
+
 .filter-form__button {
   margin-top: 40px;
 }
@@ -2191,12 +2191,16 @@ input:checked + .button--tab-select {
 
 .site-header__compare {
   width: 123px;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .site-header__cart {
   width: 123px;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .site-header__main-menu {
