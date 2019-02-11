@@ -1529,11 +1529,6 @@ input:checked + .button--tab-select {
 
 .breadcrumbs__list {
   list-style: none;
-  line-height: 24px;
-  color: #000000;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 0.14px;
 
   display: flex;
   padding: 0;
@@ -1541,20 +1536,24 @@ input:checked + .button--tab-select {
 }
 
 .breadcrumbs__item {
-  padding-right: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.14px;
+
+  display: flex;
 }
 
-.breadcrumbs__item:not(:first-child)::before {
+.breadcrumbs__item:not(:last-child)::after {
   content: "";
   background-image: url(../img/icons/nav-arrow.svg);
-  background-position: left;
+  background-position: right;
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 4px;
-  height: 7px;
-  display: inline-block;
-  padding-right: 20px;
   opacity: 0.3;
+
+  width: 4px;
+  margin: 0 20px;
 }
 
 .breadcrumbs__item--current {
@@ -1563,11 +1562,7 @@ input:checked + .button--tab-select {
 
 .breadcrumbs__link {
   text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0.14px;
+  color: #000000;
   opacity: 0.3;
   transition: color 0.3s;
 }
@@ -1738,9 +1733,6 @@ input:checked + .button--tab-select {
 
 .products-sort__types {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
   width: 580px;
 }
 
@@ -2221,8 +2213,7 @@ input:checked + .button--tab-select {
   line-height: 48px;
   letter-spacing: 0.17px;
 
-  margin: 0 auto;
-  padding: 40px 0 0 0;
+  margin: 40px auto 0;
   width: 1040px;
 }
 
@@ -2263,8 +2254,7 @@ input:checked + .button--tab-select {
 
 .site-content__breadcrumbs {
   width: 1040px;
-  margin: auto;
-  padding: 25px 0 45px 0;
+  margin: 25px auto 45px;
 }
 
 
@@ -2275,8 +2265,6 @@ input:checked + .button--tab-select {
 
 .site-content__products-sort {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 26px 0;
 }
 
@@ -2301,13 +2289,10 @@ input:checked + .button--tab-select {
   margin: auto;
   width: 1160px;
   display: flex;
-  flex-direction: row;
 
 }
 
 .site-content__col-container {
-  display: flex;
-  flex-direction: column;
   width: 830px;
 }
 
