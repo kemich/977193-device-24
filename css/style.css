@@ -1602,7 +1602,6 @@ input:checked + .button--tab-select {
 
 .products-filter {
   background: #eeeeee;
-  box-shadow: -270px 0px 0px 0px #eeeeee;
 }
 
 .products-filter__title {
@@ -1614,7 +1613,6 @@ input:checked + .button--tab-select {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.91px;
-  box-shadow: -270px 0px 0px 0px #dbdbdb;
 
   margin: 0;
   padding: 23px 0;
@@ -1740,7 +1738,6 @@ input:checked + .button--tab-select {
 
 .products-sort {
   background: #ebebeb;
-  box-shadow: 270px 0px 0px 0px #ebebeb;
 }
 
 .products-sort__title {
