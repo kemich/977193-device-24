@@ -233,11 +233,11 @@
         <h2 class="index-contacts__title">Контакты</h2>
         <p class="index-contacts__descr">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <p class="index-contacts__map index-contacts-map">
-          <a class="index-contacts-map__link" href="map.html">
+          <a class="index-contacts-map__link js-modalMapOpen" href="map.html">
             <img class="index-contacts-map__img" src="img/map.jpg" alt="Наш адрес: г. Москва, ул. Строителей, 15" width="560" height="222">
           </a>
         </p>
-        <a class="index-contacts__link button button--wide-link" href="contacts.html">Напишите нам</a>
+        <a class="index-contacts__link button button--wide-link js-modalFeedbackOpen" href="contacts.html">Напишите нам</a>
       </section>
     </div>
   </main>
@@ -311,7 +311,7 @@
     </div>
   </footer>
   <section class="site-modals">
-    <div class="site-modals__modal modal modal--feedback">
+    <div class="site-modals__modal modal modal--feedback js-modalFeedback">
       <h2 class="modal__title visually-hidden">Форма обратной связи</h2>
       <form class="modal__content feedback-form" action="/feedback.html?" method="post">
 
@@ -336,15 +336,38 @@
           <button class="feedback-form__button button" type="submit">Отправить</button>
         </div>
       </form>
-      <button class="modal__button button button--close" type="button" title="Закрыть"><span class='visually-hidden'>Закрыть</span></button>
+      <button class="modal__button button button--close js-modalFeedbackClose" type="button" title="Закрыть"><span class='visually-hidden'>Закрыть</span></button>
     </div>
-    <div class="site-modals__modal modal modal--map">
+    <div class="site-modals__modal modal modal--map js-modalMap">
       <h2 class="modal__title visually-hidden">Как нас найти</h2>
       <img class="modal__content" src="img/map-big.jpg" alt="Наш адрес: г. Москва, ул. Строителей, 15" width="960" height="555">
-      <button class="modal__button button button--close" type="button" title="Закрыть"><span class='visually-hidden'>Закрыть</span></button>
+      <button class="modal__button button button--close js-modalMapClose" type="button" title="Закрыть"><span class='visually-hidden'>Закрыть</span></button>
     </div>
   </section>
   <script src="js/script.js"></script>
+
+
+  <script>
+    document.getElementsByClassName('js-modalFeedbackOpen')[0].addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementsByClassName('js-modalFeedback')[0].style.display = 'block';
+    }, false);
+
+
+    document.getElementsByClassName('js-modalFeedbackClose')[0].onclick = function() {
+      document.getElementsByClassName('js-modalFeedback')[0].removeAttribute("style");
+    };
+
+
+    document.getElementsByClassName('js-modalMapOpen')[0].addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementsByClassName('js-modalMap')[0].style.display = 'block';
+    }, false);
+
+    document.getElementsByClassName('js-modalMapClose')[0].onclick = function() {
+      document.getElementsByClassName('js-modalMap')[0].removeAttribute("style");
+    };
+  </script>
 </body>
 
 </html>
