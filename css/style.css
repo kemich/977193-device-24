@@ -1762,7 +1762,6 @@ input:checked + .button--tab-select {
   color: rgb(0, 0, 0);
   font-size: 14px;
   font-weight: 400;
-  line-height: 18px;
   opacity: 0.3;
   text-decoration: none;
   margin-right: 30px;
@@ -2291,7 +2290,9 @@ input:checked + .button--tab-select {
 
 .site-content__products-sort {
   display: flex;
-  padding: 26px 0;
+  align-items: center;
+  line-height: 24px;
+  padding: 23px 0;
 }
 
 .site-content__products {
@@ -2315,7 +2316,6 @@ input:checked + .button--tab-select {
   background-image: linear-gradient(to right, #dcdcdc, #dcdcdc 50%, #ebebeb 50%, #ebebeb), linear-gradient(to right, #eeeeee, #eeeeee 50%, #ffffff 50%, #ffffff);
   background-size: 100% 70px, 100% 100%;
   background-repeat: no-repeat, no-repeat;
-  background-position: right 0px top 0px, right 0px top 70px;
 }
 
 .site-content__wrap {
