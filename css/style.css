@@ -275,11 +275,11 @@ input:checked + .button--tab-select {
 .search__form::before {
   content: "";
   background-image: url(../img/icons/search.svg);
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
-  width: 16px;
+  background-size: contain;
+  width: 20px;
   height: 16px;
-
   margin-right: 20px;
 }
 
@@ -294,7 +294,12 @@ input:checked + .button--tab-select {
   color: #000000;
   opacity: 0.3;
   transition: color 0.3s;
+  letter-spacing: 0.15px;
+  font-size: 15px;
+  font-weight: 300;
 }
+
+
 
 .search__input:hover {
   opacity: 0.6;
@@ -643,7 +648,7 @@ input:checked + .button--tab-select {
   background-image: url(../img/icons/plus.svg);
   background-position: right;
   background-repeat: no-repeat;
-  margin-left: 16px;
+  margin-left: 10px;
 
   width: 16px;
   height: 16px;
@@ -763,6 +768,13 @@ input:checked + .button--tab-select {
 
 .phone {}
 
+.phone::before {
+  content: "Тел:";
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
 .phone__link {
   color: #ffffff;
   font-size: 15px;
@@ -799,7 +811,7 @@ input:checked + .button--tab-select {
 }
 
 .info-menu__item {
-  padding-right: 38px;
+  padding-right: 35px;
 }
 
 .info-menu__item:last-child {
@@ -1597,7 +1609,7 @@ input:checked + .button--tab-select {
   opacity: 0.3;
 
   width: 4px;
-  margin: 0 20px;
+  margin: 0 18px 0 15px;
 }
 
 .breadcrumbs__item--current {
@@ -1642,7 +1654,7 @@ input:checked + .button--tab-select {
   font-size: 16px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.91px;
+  letter-spacing: 3.8px;
 
   margin: 0;
   padding: 23px 0;
@@ -1661,7 +1673,7 @@ input:checked + .button--tab-select {
   border: none;
 
   padding: 0;
-  margin: 40px 0 0 0;
+  margin: 38px 0 0 0;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1686,7 +1698,7 @@ input:checked + .button--tab-select {
   line-height: 24px;
   letter-spacing: 0.18px;
 
-  padding: 15px 0 30px 0;
+  padding: 10px 0 15px 0;
 }
 
 .filter-form__checkbox {}
@@ -1698,7 +1710,7 @@ input:checked + .button--tab-select {
   background-repeat: no-repeat;
   width: 27px;
   height: 23px;
-  margin-right: 17px;
+  margin-right: 10px;
 }
 
 .filter-form__checkbox:checked + .filter-form__label::before {
@@ -1734,7 +1746,7 @@ input:checked + .button--tab-select {
   background-repeat: no-repeat;
   width: 27px;
   height: 25px;
-  margin-right: 17px;
+  margin-right: 10px;
 
 }
 
@@ -1753,7 +1765,7 @@ input:checked + .button--tab-select {
 }
 
 .filter-form__button {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 
@@ -1762,7 +1774,9 @@ input:checked + .button--tab-select {
 
 .filter-form__range-filter {}
 
-.range-filter {}
+.range-filter {
+  margin-top: 22px;
+}
 
 .range-filter__range-controls {}
 
@@ -1848,8 +1862,8 @@ input:checked + .button--tab-select {
   font-size: 16px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.91px;
-  width: 250px;
+  letter-spacing: 3.8px;
+  width: 210px;
 
   margin: 0 0 0 70px;
 }
@@ -1865,7 +1879,7 @@ input:checked + .button--tab-select {
   font-weight: 400;
   opacity: 0.3;
   text-decoration: none;
-  margin-right: 30px;
+  margin-right: 29px;
 }
 
 .products-sort__link:hover,
@@ -1942,7 +1956,7 @@ input:checked + .button--tab-select {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   position: relative;
 }
 
@@ -1952,7 +1966,7 @@ input:checked + .button--tab-select {
   justify-content: space-between;
   align-items: flex-start;
   min-height: 50px;
-  margin-top: 40px;
+  margin-top: 32px;
 }
 
 .products-item__block-controls {
@@ -2312,7 +2326,7 @@ input:checked + .button--tab-select {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 35px 60px 25px 60px;
+  margin: 15px 60px 30px 60px;
   padding: 0;
 }
 
@@ -2365,9 +2379,9 @@ input:checked + .button--tab-select {
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.55px;
 
-  margin: 40px auto 0;
+  margin: 36px auto 0;
   width: 1040px;
 }
 
@@ -2425,11 +2439,11 @@ input:checked + .button--tab-select {
 }
 
 .site-content__products {
-  margin: 20px 0 20px 70px;
+  margin: 70px 0 0px 70px;
 }
 
 .site-content__products-pagination {
-  margin: 20px 0 77px 70px;
+  margin: 0px 0 77px 70px;
 }
 
 .site-content__container {
@@ -2488,7 +2502,7 @@ input:checked + .button--tab-select {
 
 .site-footer__container:nth-child(1) {
   justify-content: flex-end;
-  margin: 66px 0 37px 0;
+  margin: 65px 0 35px 0;
 }
 
 .site-footer__container:nth-child(2) {}
@@ -2505,17 +2519,17 @@ input:checked + .button--tab-select {
   display: flex;
   justify-content: flex-end;
   margin: 0;
-  padding-left: 65px;
+  padding-left: 40px;
 }
 
 .site-footer__compare {
-  padding-left: 65px;
+  padding-left: 40px;
   display: flex;
   align-items: center;
 }
 
 .site-footer__cart {
-  padding-left: 65px;
+  padding-left: 40px;
   display: flex;
   align-items: center;
 }
