@@ -88,15 +88,15 @@
       <h2 class="index-slider__title visually-hidden">Наши лучшие предложения</h2>
       <div class="index-slider__container">
         <input class="visually-hidden index-slider__control-radio" type="radio" name="indexSlider" id="slider-item-1-control" checked>
-        <label class="index-slider__control-label" for="slider-item-1-control" aria-label="Показать Слайд 1"><span class="visually-hidden">Слайд 1</span></label>
         <input class="visually-hidden index-slider__control-radio" type="radio" name="indexSlider" id="slider-item-2-control">
-        <label class="index-slider__control-label" for="slider-item-2-control" aria-label="Показать Слайд 2"><span class="visually-hidden">Слайд 2</span></label>
         <input class="visually-hidden index-slider__control-radio" type="radio" name="indexSlider" id="slider-item-3-control">
-        <label class="index-slider__control-label" for="slider-item-3-control" aria-label="Показать Слайд 3"><span class="visually-hidden">Слайд 3</span></label>
-
+        <div class="index-slider__controls slider-controls">
+          <label class="slider-controls__item" for="slider-item-1-control" aria-label="Показать Слайд 1"><span class="visually-hidden">Слайд 1</span></label>
+          <label class="slider-controls__item" for="slider-item-2-control" aria-label="Показать Слайд 2"><span class="visually-hidden">Слайд 2</span></label>
+          <label class="slider-controls__item" for="slider-item-3-control" aria-label="Показать Слайд 3"><span class="visually-hidden">Слайд 3</span></label>
+        </div>
         <ul class="index-slider__list" aria-label="Список слайдов">
           <li class="index-slider__item index-slider-item" id="slider-item-1" aria-label="Первый слайд:">
-
             <div class="index-slider-item__content">
               <h3 class="index-slider-item__title">Делай селфи, как Бен Стиллер!</h3>
               <p class="index-slider-item__descr">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -168,29 +168,28 @@
     <section class="site-content__index-services index-services">
       <h2 class="index-services__title visually-hidden">Наши услуги</h2>
       <div class="index-services__container">
-        <div class="index-services__control">
-          <input class="visually-hidden index-services__control-radio" type="radio" name="indexServices" id="services-item-1-control" checked>
-          <label class="index-services__control-label button button--tab-select" for="services-item-1-control" aria-label="Выбрать услугу Доставка">Доставка</label>
-          <input class="visually-hidden index-services__control-radio" type="radio" name="indexServices" id="services-item-2-control">
-          <label class="index-services__control-label button button--tab-select" for="services-item-2-control" aria-label="Выбрать услугу Гарантия">Гарантия</label>
-          <input class="visually-hidden index-services__control-radio" type="radio" name="indexServices" id="services-item-3-control">
-          <label class="index-services__control-label button button--tab-select" for="services-item-3-control" aria-label="Выбрать услугу Кредит">Кредит</label>
-
-          <ul class="index-services__list" aria-label="Перечень услуг">
-            <li class="index-services__item index-services-item" id="services-item-1">
-              <h3 class="index-services-item__title">Доставка</h3>
-              <p class="index-services-item__descr">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            </li>
-            <li class="index-services__item index-services-item" id="services-item-2">
-              <h3 class="index-services-item__title">Гарантия</h3>
-              <p class="index-services-item__descr">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
-            </li>
-            <li class="index-services__item index-services-item" id="services-item-3">
-              <h3 class="index-services-item__title">Кредит</h3>
-              <p class="index-services-item__descr">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-            </li>
-          </ul>
+        <input class="visually-hidden index-services__control-radio" type="radio" name="indexServices" id="services-item-1-control" checked>
+        <input class="visually-hidden index-services__control-radio" type="radio" name="indexServices" id="services-item-2-control">
+        <input class="visually-hidden index-services__control-radio" type="radio" name="indexServices" id="services-item-3-control">
+        <div class="index-services__controls services-controls">
+          <label class="services-controls__item button button--tab-select" for="services-item-1-control" aria-label="Выбрать услугу Доставка">Доставка</label>
+          <label class="services-controls__item button button--tab-select" for="services-item-2-control" aria-label="Выбрать услугу Гарантия">Гарантия</label>
+          <label class="services-controls__item button button--tab-select" for="services-item-3-control" aria-label="Выбрать услугу Кредит">Кредит</label>
         </div>
+        <ul class="index-services__list" aria-label="Перечень услуг">
+          <li class="index-services__item index-services-item" id="services-item-1">
+            <h3 class="index-services-item__title">Доставка</h3>
+            <p class="index-services-item__descr">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </li>
+          <li class="index-services__item index-services-item" id="services-item-2">
+            <h3 class="index-services-item__title">Гарантия</h3>
+            <p class="index-services-item__descr">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+          </li>
+          <li class="index-services__item index-services-item" id="services-item-3">
+            <h3 class="index-services-item__title">Кредит</h3>
+            <p class="index-services-item__descr">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="site-content__index-brands index-brands">
@@ -344,7 +343,7 @@
       <h2 class="modal__title visually-hidden">Как нас найти</h2>
 
       <div class="modal__content">
-        <script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2b59730831bb320d011fec53f3b163f8adf3d6efa9e0db7bf7c9aba2d366880c&amp;width=960&amp;height=555&amp;lang=ru_RU&amp;scroll=true"></script>
+        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2b59730831bb320d011fec53f3b163f8adf3d6efa9e0db7bf7c9aba2d366880c&amp;width=960&amp;height=555&amp;lang=ru_RU&amp;scroll=true"></script>
         <img src="img/map-big.jpg" alt="Наш адрес: г. Москва, ул. Строителей, 15" width="960" height="555">
       </div>
       <button class="modal__button button button--close js-modalMapClose" type="button" title="Закрыть"><span class='visually-hidden'>Закрыть</span></button>
@@ -409,7 +408,6 @@
         })(elements[i]);
       }
     }
-
   </script>
 
 </body>

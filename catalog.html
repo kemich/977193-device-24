@@ -103,7 +103,20 @@
           <form class="products-filter__form filter-form" action="catalog.html?" method="get">
             <fieldset class="filter-form__fieldset">
               <legend class="filter-form__legend">Стоимость</legend>
-              <!-- здесь будет крутой ползунок-->
+              <div class="filter-form__range-filter range-filter">
+                <div class="range-filter__range-controls">
+                  <div class="range-filter__scale">
+                    <div class="range-filter__bar"></div>
+                  </div>
+                  <div class="range-filter__toggle range-filter__toggle--min"></div>
+                  <div class="range-filter__toggle range-filter__toggle--max"></div>
+                </div>
+                <div class="range-filter__price-controls">
+                  <label class="range-filter__price-label">от <input class="range-filter__price-input" name="min-price" type="number" value="0"></label>
+                  <label class="range-filter__price-label">до <input class='range-filter__price-input' name="max-price" type="number" value="5000"></label>
+                </div>
+              </div>
+
             </fieldset>
             <fieldset class="filter-form__fieldset">
               <legend class="filter-form__legend">Цвет</legend>
@@ -192,11 +205,11 @@
                 <img class="products-item__img" src="img/products/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
               </li>
               <li class="products__item products-item" aria-label="Товар 4">
+                <b class="products-item__tag-new"><span class="visually-hidden">Новинка</span></b>
                 <div class="products-item__block-content">
                   <h3 class="products-item__title" aria-label="Название:">
                     <a class="products-item__link" href="product.html?id=item-4">Селфи-палка «Следуй за мной»</a>
                   </h3>
-
                   <b class="products-item__price" aria-label="Цена товара:">4900 руб.</b>
                 </div>
                 <div class="products-item__block-controls">
