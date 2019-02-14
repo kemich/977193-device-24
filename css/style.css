@@ -94,7 +94,7 @@ body {
   line-height: 8px;
   min-width: 200px;
   text-transform: uppercase;
-  letter-spacing: 2.15px;
+  letter-spacing: 4px;
   background-color: rgba(240, 197, 46, 1);
   text-align: center;
   vertical-align: middle;
@@ -944,7 +944,7 @@ input:checked + .button--tab-select {
   display: flex;
   flex-direction: column;
   width: 560px;
-  min-height: 500px;
+  min-height: 490px;
   position: relative;
 }
 
@@ -980,7 +980,7 @@ input:checked + .button--tab-select {
   line-height: 56px;
   letter-spacing: 0.17px;
 
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
   z-index: 5;
 }
 
@@ -1026,8 +1026,8 @@ input:checked + .button--tab-select {
   flex-direction: column-reverse;
   flex-wrap: wrap;
   align-self: flex-start;
-  height: 68px;
-  margin: 60px 0 40px 0;
+  height: 78px;
+  margin: 50px 0 40px 0;
   padding: 0;
 }
 
@@ -1035,12 +1035,12 @@ input:checked + .button--tab-select {
   color: rgb(70, 70, 70);
   font-size: 13px;
   font-weight: 300;
-  line-height: 20px;
+  line-height: 30px;
   letter-spacing: 0.13px;
 
   margin: 0;
   margin: 0;
-  min-width: 160px;
+  min-width: 155px;
 }
 
 .index-slider-item-prop__descr {
@@ -1052,7 +1052,7 @@ input:checked + .button--tab-select {
   letter-spacing: 0.36px;
 
   margin: 0;
-  min-width: 160px;
+  min-width: 155px;
 }
 
 .index-slider-item__link {
@@ -1062,7 +1062,7 @@ input:checked + .button--tab-select {
 
 .index-slider__controls {
   position: absolute;
-  top: 297px;
+  top: 287px;
   right: 70px;
   z-index: 15;
 }
@@ -1188,7 +1188,7 @@ input:checked + .button--tab-select {
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
-  letter-spacing: 0.18px;
+  letter-spacing: 0.45px;
   text-decoration: none;
 
   display: flex;
@@ -1302,7 +1302,7 @@ input:checked + .button--tab-select {
   flex-direction: column;
   justify-content: space-between;
   width: 278px;
-  height: 160px;
+  height: 170px;
   margin-top: -100px;
   padding: 80px 0;
   position: relative;
@@ -1321,9 +1321,9 @@ input:checked + .button--tab-select {
 
 .index-services__list {
   list-style: none;
-  width: 756px;
+  width: 760px;
   margin: -100px 0 0 0;
-  padding: 73px 0 0 119px;
+  padding: 73px 0 0 115px;
 }
 
 .index-services-item {
@@ -1373,11 +1373,11 @@ input:checked + .button--tab-select {
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
-  letter-spacing: 0.21px;
+  letter-spacing: 1px;
 
   max-width: 426px;
   padding: 0;
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
 }
 
 .index-services-item__descr {
@@ -1385,7 +1385,7 @@ input:checked + .button--tab-select {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.25px;
 
   max-width: 426px;
   padding: 0;
@@ -1468,7 +1468,7 @@ input:checked + .button--tab-select {
   line-height: 48px;
   letter-spacing: 0.21px;
 
-  margin: 35px 0;
+  margin: 45px 0;
 }
 
 .index-about__descr {
@@ -1476,14 +1476,14 @@ input:checked + .button--tab-select {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-
-  margin: 0 0 35px 0;
+  letter-spacing: 0.1px;
+  margin: 0 0 30px 0;
 }
 
 .index-about__tk-list {
   list-style: none;
-
-  margin: 20px 0 20px 0;
+  padding: 0;
+  margin: 5px 0 5px 0;
 }
 
 .index-about__tk-item {
@@ -1494,6 +1494,7 @@ input:checked + .button--tab-select {
   line-height: 40px;
   display: flex;
   align-items: center;
+  letter-spacing: 0.25px;
 }
 
 .index-about__tk-item::before {
@@ -1504,7 +1505,7 @@ input:checked + .button--tab-select {
   background-repeat: no-repeat;
   width: 8px;
   height: 8px;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .index-about__link {
@@ -1539,7 +1540,7 @@ input:checked + .button--tab-select {
   line-height: 48px;
   letter-spacing: 0.21px;
 
-  margin: 35px 0;
+  margin: 45px 0;
 }
 
 .index-contacts__descr {
@@ -1547,13 +1548,14 @@ input:checked + .button--tab-select {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
+  letter-spacing: 0.1px;
 
-  margin: 0 0 35px 0;
+  margin: 0 0 30px 0;
 }
 
 .index-contacts__map {
   padding: 0;
-  margin: 0 0 70px 0;
+  margin: 10px 0 70px 0;
 }
 
 .index-contacts-map__link {}
@@ -2403,7 +2405,7 @@ input:checked + .button--tab-select {
 
 .site-content__index-brands {
   width: 1160px;
-  margin: 40px auto;
+  margin: 50px auto 55px;
 }
 
 .site-content__index-about {
