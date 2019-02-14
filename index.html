@@ -337,7 +337,7 @@
           <button class="feedback-form__button button" type="submit">Отправить</button>
         </div>
       </form>
-      <button class="modal__button button button--close js-modalFeedbackClose" type="button" title="Закрыть"><span class='visually-hidden'>Закрыть</span></button>
+      <button class="modal__button button button--close js-modalFeedbackClose" type="button" title="Закрыть"><span class="visually-hidden">Закрыть</span></button>
     </div>
     <div class="site-modals__modal modal modal--map js-modalMap">
       <h2 class="modal__title visually-hidden">Как нас найти</h2>
@@ -346,28 +346,28 @@
         <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2b59730831bb320d011fec53f3b163f8adf3d6efa9e0db7bf7c9aba2d366880c&amp;width=960&amp;height=555&amp;lang=ru_RU&amp;scroll=true"></script>
         <img src="img/map-big.jpg" alt="Наш адрес: г. Москва, ул. Строителей, 15" width="960" height="555">
       </div>
-      <button class="modal__button button button--close js-modalMapClose" type="button" title="Закрыть"><span class='visually-hidden'>Закрыть</span></button>
+      <button class="modal__button button button--close js-modalMapClose" type="button" title="Закрыть"><span class="visually-hidden">Закрыть</span></button>
     </div>
   </section>
   <script src="js/script.js"></script>
 
 
   <script>
-    let modalFeedback = document.getElementsByClassName('js-modalFeedback')[0];
-    let modalFeedbackOpen = document.getElementsByClassName('js-modalFeedbackOpen')[0];
-    let modalFeedbackClose = document.getElementsByClassName('js-modalFeedbackClose')[0];
+    let modalFeedback = document.getElementsByClassName("js-modalFeedback")[0];
+    let modalFeedbackOpen = document.getElementsByClassName("js-modalFeedbackOpen")[0];
+    let modalFeedbackClose = document.getElementsByClassName("js-modalFeedbackClose")[0];
 
-    let modalMap = document.getElementsByClassName('js-modalMap')[0];
-    let modalMapOpen = document.getElementsByClassName('js-modalMapOpen')[0];
-    let modalMapClose = document.getElementsByClassName('js-modalMapClose')[0];
+    let modalMap = document.getElementsByClassName("js-modalMap")[0];
+    let modalMapOpen = document.getElementsByClassName("js-modalMapOpen")[0];
+    let modalMapClose = document.getElementsByClassName("js-modalMapClose")[0];
 
-    let modalWrap = document.getElementsByClassName('js-modalWrap')[0];
+    let modalWrap = document.getElementsByClassName("js-modalWrap")[0];
 
-    modalFeedbackOpen.addEventListener('click', function(event) {
+    modalFeedbackOpen.addEventListener("click", function(event) {
       event.preventDefault();
-      modalWrap.style.display = 'block';
-      modalFeedback.style.display = 'block';
-      modalFeedback.querySelectorAll('[name]')[0].focus();
+      modalWrap.style.display = "block";
+      modalFeedback.style.display = "block";
+      modalFeedback.querySelectorAll("[name]")[0].focus();
     }, false);
 
     modalFeedbackClose.onclick = function() {
@@ -375,10 +375,10 @@
       modalWrap.removeAttribute("style");
     };
 
-    modalMapOpen.addEventListener('click', function(e) {
+    modalMapOpen.addEventListener("click", function(e) {
       e.preventDefault();
-      modalWrap.style.display = 'block';
-      modalMap.style.display = 'block';
+      modalWrap.style.display = "block";
+      modalMap.style.display = "block";
       modalMapClose.focus();
     }, false);
 
@@ -394,13 +394,13 @@
     };
 
     if (window.localStorage) {
-      var elements = document.querySelectorAll('[name]');
+      var elements = document.querySelectorAll("[name]");
 
       for (var i = 0, length = elements.length; i < length; i++) {
         (function(element) {
-          var name = element.getAttribute('name');
+          var name = element.getAttribute("name");
 
-          element.value = localStorage.getItem(name) || '';
+          element.value = localStorage.getItem(name) || "";
 
           element.onkeyup = function() {
             localStorage.setItem(name, element.value);
