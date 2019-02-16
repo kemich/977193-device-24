@@ -311,7 +311,6 @@ input:checked + .button--tab-select {
   opacity: 0;
 
   transition: opacity 0.3s, background-color 0.3s;
-
   pointer-events: none;
 }
 
