@@ -74,7 +74,7 @@ body {
 /* Кнопки */
 
 .button {
-  display: inline-block;
+
   min-width: 200px;
   padding: 0;
 
@@ -99,15 +99,13 @@ body {
 
 .button:hover,
 .button:focus {
-  border-top-color: rgb(240, 197, 46);
-  border-bottom-color: rgb(240, 197, 46);
+  border-color: rgb(240, 197, 46);
 }
 
 .button:active {
   color: rgba(0, 0, 0, 0.3);
 
-  border-top-color: rgb(240, 197, 46);
-  border-bottom-color: rgb(240, 197, 46);
+  border-color: rgb(240, 197, 46);
 }
 
 .button--link {
@@ -416,7 +414,6 @@ input:checked + .button--tab-select {
   background-image: url(../img/icons/user-color.svg);
   background-repeat: no-repeat;
   background-position: left;
-  background-size: contain;
 }
 
 .site-footer .user__link {
@@ -580,6 +577,8 @@ input:checked + .button--tab-select {
 /* Блок Основное меню */
 
 .main-menu__list {
+  position: relative;
+
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -589,6 +588,7 @@ input:checked + .button--tab-select {
   list-style: none;
   line-height: 24px;
 }
+
 
 .main-menu__item {
   width: 140px;
@@ -603,18 +603,18 @@ input:checked + .button--tab-select {
 }
 
 .main-menu__item--dropdown {
-  position: relative;
-
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  align-self: stretch;
   width: 520px;
 }
+
 
 .main-menu__item--dropdown::after {
   content: "";
 
   width: 16px;
-  height: 16px;
+  height: 24px;
   margin-left: 10px;
 
   background-image: url(../img/icons/plus.svg);
@@ -629,7 +629,7 @@ input:checked + .button--tab-select {
 
 .main-menu__catalog {
   position: absolute;
-  top: 24px;
+  bottom: -166px;
   z-index: 10;
 
   display: none;
@@ -743,8 +743,8 @@ input:checked + .button--tab-select {
 .site-footer__container:nth-child(3)::before {
   content: "";
 
-  min-width: 80px;
-  min-height: 7px;
+  width: 80px;
+  height: 7px;
 
   background-color: rgb(255, 198, 0);
 }
