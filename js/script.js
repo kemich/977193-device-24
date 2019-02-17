@@ -4,13 +4,13 @@
 
   var modalFeedback, modalFeedbackOpen, modalFeedbackClose, modalMap, modalMapOpen, modalMapClose, modalWrap;
 
-  modalFeedback = document.querySelectorAll(".js-modalFeedback")[0];
-  modalFeedbackOpen = document.querySelectorAll(".js-modalFeedbackOpen")[0];
-  modalFeedbackClose = document.querySelectorAll(".js-modalFeedbackClose")[0];
-  modalMap = document.querySelectorAll(".js-modalMap")[0];
-  modalMapOpen = document.querySelectorAll(".js-modalMapOpen")[0];
-  modalMapClose = document.querySelectorAll(".js-modalMapClose")[0];
-  modalWrap = document.querySelectorAll(".js-modalWrap")[0];
+  modalFeedback = document.querySelector(".js-modalFeedback");
+  modalFeedbackOpen = document.querySelector(".js-modalFeedbackOpen");
+  modalFeedbackClose = document.querySelector(".js-modalFeedbackClose");
+  modalMap = document.querySelector(".js-modalMap");
+  modalMapOpen = document.querySelector(".js-modalMapOpen");
+  modalMapClose = document.querySelector(".js-modalMapClose");
+  modalWrap = document.querySelector(".js-modalWrap");
 
   modalFeedbackOpen.addEventListener("click", function (event) {
     event.preventDefault();
@@ -59,9 +59,11 @@
 
     element.value = localStorage.getItem(name) || "";
 
-    element.onkeyup = function () {
+    element.addEventListener("keyup", function (event) {
+      event.preventDefault();
       localStorage.setItem(name, element.value);
-    };
+    }, false);
+
   }
 
   if (window.localStorage) {
