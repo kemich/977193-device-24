@@ -41,7 +41,6 @@
 /* Общее */
 
 html {
-  height: 100%;
   margin: 0;
 
   font-family: inherit;
@@ -52,7 +51,7 @@ body {
   flex-direction: column;
   width: 100%;
   min-width: 1200px;
-  height: 100%;
+  min-height: 100vh;
   margin: 0 auto;
 
   font-family: "OpenSans",
@@ -2140,7 +2139,6 @@ input:checked + .button--tab-select {
 
 .site-header {
   display: flex;
-  flex: 0 0 auto;
   flex-direction: column;
   width: 1160px;
   min-height: 186px;
@@ -2199,7 +2197,6 @@ input:checked + .button--tab-select {
 
 .site-content {
   display: flex;
-  flex: 1 0 auto;
   flex-direction: column;
 }
 
@@ -2310,7 +2307,7 @@ input:checked + .button--tab-select {
 /* Глобальный блок Подвал */
 
 .site-footer {
-  flex: 0 0 auto;
+  margin-top: auto;
 
   background-color: rgb(70, 70, 70);
 }
