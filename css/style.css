@@ -107,6 +107,7 @@ body {
 }
 
 
+
 .button:hover,
 .button:focus {
   background-size: 100% 100%;
@@ -166,8 +167,6 @@ body {
 }
 
 .button--compare {
-  padding: 0;
-
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
@@ -576,7 +575,8 @@ body {
   opacity: 0.3;
 }
 
-.main-menu__item--dropdown:hover .main-menu__catalog {
+.main-menu__item--dropdown:hover .main-menu__catalog,
+.main-menu__item--dropdown:focus-within .main-menu__catalog {
   height: 108px;
   padding: 29px 60px;
 
