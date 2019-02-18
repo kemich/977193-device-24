@@ -86,7 +86,7 @@ body {
 
   font-weight: 800;
   font-size: 18px;
-  line-height: 8px;
+  line-height: 40px;
   font-family: "Gilroy", "Arial", sans-serif;
   vertical-align: middle;
   text-align: center;
@@ -95,25 +95,27 @@ body {
   text-decoration: none;
   letter-spacing: 4px;
 
-  background-color: rgb(240, 197, 46);
-  background-clip: content-box;
+  background-color: transparent;
+  background-image: linear-gradient(rgb(240, 197, 46), rgb(240, 197, 46));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 8px;
   border: none;
-  border-top: 16px solid transparent;
-  border-bottom: 16px solid transparent;
   cursor: pointer;
 
-  transition: color 0.3s, border-color 0.3s;
+  transition: color 0.3s, background-size 0.3s;
 }
+
 
 .button:hover,
 .button:focus {
-  border-color: rgb(240, 197, 46);
+  background-size: 100% 100%;
 }
 
 .button:active {
   color: rgba(0, 0, 0, 0.3);
 
-  border-color: rgb(240, 197, 46);
+  background-size: 100% 100%;
 }
 
 .button--link {
@@ -135,7 +137,7 @@ body {
   text-transform: none;
   letter-spacing: 0.15px;
 
-  background-color: transparent;
+  background-image: none;
   background-clip: border-box;
   border: 2px solid rgb(0, 0, 0);
 
@@ -160,32 +162,7 @@ body {
 .button--tab-select {
   min-width: 160px;
 
-  transition: border-right-width 0.3s;
-}
-
-.button--tab-select:active {
-  line-height: 0;
-  color: rgb(247, 225, 132);
-
-  background-color: rgb(0, 0, 0);
-  background-clip: border-box;
-  border-color: rgb(0, 0, 0);
-  border-top-width: 20px;
-  /*border-right-width: 118px;*/
-  border-right-style: solid;
-  border-bottom-width: 20px;
-}
-
-input:checked + .button--tab-select {
-  line-height: 0;
-  color: rgb(247, 225, 132);
-
-  background-color: rgb(0, 0, 0);
-  border-color: rgb(0, 0, 0);
-  border-top-width: 20px;
-  border-right-width: 118px;
-  border-right-style: solid;
-  border-bottom-width: 20px;
+  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s, background-size 0.3s 0.3s;
 }
 
 .button--compare {
@@ -198,8 +175,7 @@ input:checked + .button--tab-select {
   text-transform: none;
   letter-spacing: 0.13px;
 
-  background-color: transparent;
-  border: none;
+  background-image: none;
 
   transition: color 0.3s;
 }
@@ -610,8 +586,8 @@ input:checked + .button--tab-select {
 
 .main-menu__catalog {
   position: absolute;
-  left: 0;
   bottom: -166px;
+  left: 0;
   z-index: 10;
 
   /*display: none;*/
@@ -623,7 +599,7 @@ input:checked + .button--tab-select {
   visibility: hidden;
   opacity: 0;
 
-  transition: opacity 0.3s, height 0.2s;
+  transition: opacity 0.3s;
 }
 
 .main-menu__link {
@@ -1172,15 +1148,6 @@ input:checked + .button--tab-select {
   border-right-color: rgb(0, 0, 0);
 }
 
-.services-controls__item {
-  align-self: end;
-  margin: 0;
-}
-
-.services-controls__item:active {
-  align-self: end;
-}
-
 .index-services__list {
   width: 760px;
   margin: -100px 0 0;
@@ -1261,56 +1228,23 @@ input:checked + .button--tab-select {
 
 /* Оживление табов */
 
-#services-item-1-control:checked ~ .index-services__list #services-item-1 {
-  display: block;
-}
-
-#services-item-1-control:checked ~ .services-controls .services-controls__item[for=services-item-1-control] {
-  line-height: 0;
-  color: rgb(247, 225, 132);
-
-  background-color: rgba(0, 0, 0, 1);
-  background-clip: border-box;
-  border-color: rgb(0, 0, 0);
-  border-top-width: 20px;
-  border-right-width: 118px;
-  border-right-style: solid;
-  border-bottom-width: 20px;
-}
-
-#services-item-2-control:checked ~ .index-services__list #services-item-2 {
-  display: block;
-}
-
-#services-item-2-control:checked ~ .services-controls .services-controls__item[for=services-item-2-control] {
-  line-height: 0;
-  color: rgb(247, 225, 132);
-
-  background-color: rgb(0, 0, 0);
-  background-clip: border-box;
-  border-color: rgb(0, 0, 0);
-  border-top-width: 20px;
-  border-right-width: 118px;
-  border-right-style: solid;
-  border-bottom-width: 20px;
-}
-
+#services-item-1-control:checked ~ .index-services__list #services-item-1,
+#services-item-2-control:checked ~ .index-services__list #services-item-2,
 #services-item-3-control:checked ~ .index-services__list #services-item-3 {
   display: block;
 }
 
+#services-item-1-control:checked ~ .services-controls .services-controls__item[for=services-item-1-control],
+#services-item-2-control:checked ~ .services-controls .services-controls__item[for=services-item-2-control],
 #services-item-3-control:checked ~ .services-controls .services-controls__item[for=services-item-3-control] {
-  line-height: 0;
   color: rgb(247, 225, 132);
 
   background-color: rgb(0, 0, 0);
-  background-clip: border-box;
-  border-color: rgb(0, 0, 0);
-  border-top-width: 20px;
-  border-right-width: 118px;
-  border-right-style: solid;
-  border-bottom-width: 20px;
+  background-image: none;
+  background-size: 100% 100%;
+  box-shadow: 118px 0 0 rgb(0, 0, 0);
 }
+
 
 /* Блок о нас на главной */
 
