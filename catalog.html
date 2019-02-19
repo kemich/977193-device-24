@@ -23,7 +23,8 @@
     <div class="site-header__container">
       <div class="site-header__search search">
         <form class="search__form" action="catalog.html?" method="get" aria-label="Форма поиска по сайту">
-          <input class="search__input" type="search" name="searchRequest" placeholder="Поиск по сайту" aria-label="Введите ваш запрос">
+          <label class="search__label" for="search">Поиск по сайту</label>
+          <input class="search__input" type="search" name="searchRequest" id="search" placeholder="Поиск по сайту" aria-label="Введите ваш запрос">
           <button class="search__button button button--search" type="submit">Найти</button>
         </form>
       </div>
@@ -126,29 +127,29 @@
               <legend class="filter-form__legend">Цвет</legend>
 
               <input class="filter-form__checkbox visually-hidden" type="checkbox" name="colorBlack" id="checkbox1" checked>
-              <label class="filter-form__label" for="checkbox1"><span>Черный</span></label>
+              <label class="filter-form__label" for="checkbox1">Черный</label>
 
               <input class="filter-form__checkbox visually-hidden" type="checkbox" name="colorWhite" id="checkbox2">
-              <label class="filter-form__label" for="checkbox2"><span>Белый</span></label>
+              <label class="filter-form__label" for="checkbox2">Белый</label>
 
               <input class="filter-form__checkbox visually-hidden" type="checkbox" name="colorBlue" id="checkbox3" checked>
-              <label class="filter-form__label" for="checkbox3"><span>Синий</span></label>
+              <label class="filter-form__label" for="checkbox3">Синий</label>
 
               <input class="filter-form__checkbox visually-hidden" type="checkbox" name="colorRad" id="checkbox4" disabled>
-              <label class="filter-form__label" for="checkbox4"><span>Красный</span></label>
+              <label class="filter-form__label" for="checkbox4">Красный</label>
 
               <input class="filter-form__checkbox visually-hidden" type="checkbox" name="colorPink" id="checkbox5">
-              <label class="filter-form__label" for="checkbox5"><span>Розовый</span></label>
+              <label class="filter-form__label" for="checkbox5">Розовый</label>
 
             </fieldset>
             <fieldset class="filter-form__fieldset">
               <legend class="filter-form__legend">Bluetooth</legend>
 
               <input class="filter-form__radio visually-hidden" type="radio" name="bluetooth" id="radio1" checked>
-              <label class="filter-form__label" for="radio1"><span>Есть</span></label>
+              <label class="filter-form__label" for="radio1">Есть</label>
 
               <input class="filter-form__radio visually-hidden" type="radio" name="bluetooth" id="radio2">
-              <label class="filter-form__label" for="radio2"><span>Нет</span></label>
+              <label class="filter-form__label" for="radio2">Нет</label>
             </fieldset>
             <button class="filter-form__button button" type="submit">Показать</button>
           </form>
