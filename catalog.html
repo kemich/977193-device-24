@@ -22,7 +22,7 @@
     </div>
     <div class="site-header__container">
       <div class="site-header__search search">
-        <form class="search__form" action="catalog.html?" method="get" aria-label="Форма поиска по сайту">
+        <form class="search__form" action="https://echo.htmlacademy.ru" method="get" aria-label="Форма поиска по сайту">
           <label class="search__label" for="search">Поиск по сайту</label>
           <input class="search__input" type="search" name="searchRequest" id="search" placeholder="Поиск по сайту" aria-label="Введите ваш запрос">
           <button class="search__button button button--search" type="submit">Найти</button>
@@ -110,7 +110,6 @@
                     <div class="range-filter__bar">
                       <span class="range-filter__scroll range-filter__scroll--left"></span>
                       <span class="range-filter__scroll range-filter__scroll--right"></span>
-
                     </div>
                   </div>
                   <div class="range-filter__toggle range-filter__toggle--min"></div>
@@ -121,37 +120,28 @@
                   <label class="range-filter__price-label">до <input class="range-filter__price-input" name="max-price" type="number" value="5000"></label>
                 </div>
               </div>
-
             </fieldset>
             <fieldset class="filter-form__fieldset">
               <legend class="filter-form__legend">Цвет</legend>
-
               <input class="filter-form__checkbox visually-hidden" type="checkbox" name="colorBlack" id="checkbox1" checked>
               <label class="filter-form__label" for="checkbox1">Черный</label>
-
               <input class="filter-form__checkbox visually-hidden" type="checkbox" name="colorWhite" id="checkbox2">
               <label class="filter-form__label" for="checkbox2">Белый</label>
-
               <input class="filter-form__checkbox visually-hidden" type="checkbox" name="colorBlue" id="checkbox3" checked>
               <label class="filter-form__label" for="checkbox3">Синий</label>
-
               <input class="filter-form__checkbox visually-hidden" type="checkbox" name="colorRad" id="checkbox4" disabled>
               <label class="filter-form__label" for="checkbox4">Красный</label>
-
               <input class="filter-form__checkbox visually-hidden" type="checkbox" name="colorPink" id="checkbox5">
               <label class="filter-form__label" for="checkbox5">Розовый</label>
-
             </fieldset>
             <fieldset class="filter-form__fieldset">
               <legend class="filter-form__legend">Bluetooth</legend>
-
               <input class="filter-form__radio visually-hidden" type="radio" name="bluetooth" id="radio1" checked>
               <label class="filter-form__label" for="radio1">Есть</label>
-
               <input class="filter-form__radio visually-hidden" type="radio" name="bluetooth" id="radio2">
               <label class="filter-form__label" for="radio2">Нет</label>
             </fieldset>
-            <button class="filter-form__button button" type="submit">Показать</button>
+            <button class="filter-form__button button" type="submit" action="https://echo.htmlacademy.ru" method="get">Показать</button>
           </form>
         </section>
         <div class="site-content__col-container">
@@ -161,8 +151,8 @@
               <a class="products-sort__link active" href="catalog.html?sort=price">По цене</a>
               <a class="products-sort__link" href="catalog.html?sort=type">По типу</a>
               <a class="products-sort__link" href="catalog.html?sort=popularity">По популярности</a>
-              <a class="products-sort__link products-sort__link--sort-direct" href="catalog.html?sort=direct" title="В прямом порядке"><span class="visually-hidden">В прямом порядке</span></a>
-              <a class="products-sort__link products-sort__link--sort-reverse active" href="catalog.html?sort=reverse" title="В обратном порядке"><span class="visually-hidden">В обратном порядке</span></a>
+              <a class="products-sort__link products-sort__link--sort-direct" href="catalog.html?sort=direct" title="По возрастанию"><span class="visually-hidden">По возрастанию</span></a>
+              <a class="products-sort__link products-sort__link--sort-reverse active" href="catalog.html?sort=reverse" title="По убыванию"><span class="visually-hidden">По убыванию</span></a>
             </div>
           </section>
           <section class="site-content__products products">
@@ -171,7 +161,7 @@
               <li class="products__item products-item" aria-label="Товар 1">
                 <div class="products-item__block-content">
                   <h3 class="products-item__title" aria-label="Название:">
-                    <a class="products-item__link" href="product.html?id=item-1">Любительская селфи-палка</a>
+                    <a class="products-item__link" href="product.html?id=item-1">Любительская селфи&#8209;палка</a>
                   </h3>
                   <b class="products-item__price" aria-label="Цена товара:">500 руб.</b>
                 </div>
@@ -184,10 +174,9 @@
               <li class="products__item products-item" aria-label="Товар 2">
                 <div class="products-item__block-content">
                   <h3 class="products-item__title" aria-label="Название:">
-                    <a class="products-item__link" href="product.html?id=item-2">Профессиональная селфи-палка</a>
+                    <a class="products-item__link" href="product.html?id=item-2">Профессиональная селфи&#8209;палка</a>
                   </h3>
-
-                  <b class="products-item__price" aria-label="Цена товара:">1500 руб.</b>
+                  <b class="products-item__price" aria-label="Цена товара:">1 500 руб.</b>
                 </div>
                 <div class="products-item__block-controls">
                   <a class="products-item__button button" href="cart.html?add=true&id=item-2" aria-label="Оформить заказ:">В корзину</a>
@@ -198,10 +187,9 @@
               <li class="products__item products-item" aria-label="Товар 3">
                 <div class="products-item__block-content">
                   <h3 class="products-item__title" aria-label="Название:">
-                    <a class="products-item__link" href="product.html?id=item-3">Непотопляемая селфи-палка</a>
+                    <a class="products-item__link" href="product.html?id=item-3">Непотопляемая селфи&#8209;палка</a>
                   </h3>
-
-                  <b class="products-item__price" aria-label="Цена товара:">2500 руб.</b>
+                  <b class="products-item__price" aria-label="Цена товара:">2 500 руб.</b>
                 </div>
                 <div class="products-item__block-controls">
                   <a class="products-item__button button" href="cart.html?add=true&id=item-3" aria-label="Оформить заказ:">В корзину</a>
@@ -209,13 +197,12 @@
                 </div>
                 <img class="products-item__img" src="img/products/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
               </li>
-              <li class="products__item products-item" aria-label="Товар 4">
-                <b class="products-item__tag-new"><span class="visually-hidden">Новинка</span></b>
+              <li class="products__item products-item products-item--new" aria-label="Товар 4">
                 <div class="products-item__block-content">
                   <h3 class="products-item__title" aria-label="Название:">
-                    <a class="products-item__link" href="product.html?id=item-4">Селфи-палка «Следуй за мной»</a>
+                    <a class="products-item__link" href="product.html?id=item-4">Селфи&#8209;палка «Следуй за мной»</a>
                   </h3>
-                  <b class="products-item__price" aria-label="Цена товара:">4900 руб.</b>
+                  <b class="products-item__price" aria-label="Цена товара:">4 900 руб.</b>
                 </div>
                 <div class="products-item__block-controls">
                   <a class="products-item__button button" href="cart.html?add=true&id=item-4" aria-label="Оформить заказ:">В корзину</a>

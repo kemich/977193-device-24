@@ -16,7 +16,7 @@
     event.preventDefault();
     modalWrap.style.display = "block";
     modalFeedback.style.display = "block";
-    modalFeedback.querySelectorAll("[name]")[0].focus();
+    modalFeedback.querySelector("[name]").focus();
   }, false);
 
   modalFeedbackClose.addEventListener("click", function (event) {
