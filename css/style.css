@@ -149,8 +149,10 @@ body {
 
 .button--tab-select {
   min-width: 160px;
+
   background-color: transparent;
   border-right: 0 solid transparent;
+
   transition: color 0.3s, border 0.1s, background-size 0.3s;
 }
 
@@ -1298,7 +1300,6 @@ body {
   opacity: 1;
 }
 
-
 #services-item-1-control:checked ~ .services-controls .services-controls__item[for=services-item-1-control],
 #services-item-2-control:checked ~ .services-controls .services-controls__item[for=services-item-2-control],
 #services-item-3-control:checked ~ .services-controls .services-controls__item[for=services-item-3-control] {
@@ -1309,8 +1310,6 @@ body {
   background-size: 100% 100%;
   border-right: 118px solid rgb(0, 0, 0);
   /*box-shadow: 118px 0 0 rgb(0, 0, 0);*/
-
-
 }
 
 #services-item-1-control:focus ~ .services-controls .services-controls__item[for=services-item-1-control],
@@ -2068,6 +2067,7 @@ body {
 
 .modal-show {
   display: block;
+
   animation: bounce 0.6s;
 }
 

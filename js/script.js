@@ -1,6 +1,6 @@
 /* Управление модальными окнами */
 (function () {
-  'use strict';
+  "use strict";
 
   var modalFeedback, modalFeedbackOpen, modalFeedbackClose, modalMap, modalMapOpen, modalMapClose, modalWrap, inputs;
 
@@ -82,22 +82,17 @@
 /* Сохранение данных введенных в поля формы обратной связи в LocalStorage*/
 
 (function () {
-  'use strict';
-
+  "use strict";
   var elements, i, length;
 
   function setElement(element) {
     var name = element.getAttribute("name");
-
     element.value = localStorage.getItem(name) || "";
-
     element.addEventListener("keyup", function (event) {
       event.preventDefault();
       localStorage.setItem(name, element.value);
     }, false);
-
   }
-
   if (window.localStorage) {
     elements = document.querySelectorAll("[name]");
     for (i = 0, length = elements.length; i < length; i = i + 1) {
