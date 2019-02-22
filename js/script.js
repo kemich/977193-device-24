@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  var modalFeedback, modalFeedbackOpen, modalFeedbackClose, modalMap, modalMapOpen, modalMapClose, modalWrap, nameField, emailField;
+  var modalFeedback, modalFeedbackOpen, modalFeedbackClose, modalMap, modalMapOpen, modalMapClose, modalWrap, inputs;
 
   modalFeedback = document.querySelector(".js-modalFeedback");
   modalFeedbackOpen = document.querySelector(".js-modalFeedbackOpen");
@@ -11,14 +11,13 @@
   modalMapOpen = document.querySelector(".js-modalMapOpen");
   modalMapClose = document.querySelector(".js-modalMapClose");
   modalWrap = document.querySelector(".js-modalWrap");
-  nameField = modalFeedback.querySelector("[name=name]");
-  emailField = modalFeedback.querySelector("[name=email]");
+  inputs = modalFeedback.querySelectorAll("[name]");
 
   modalFeedbackOpen.addEventListener("click", function (event) {
     event.preventDefault();
     modalWrap.classList.add("wrap-show");
     modalFeedback.classList.add("modal-show");
-    nameField.focus();
+    inputs[0].focus();
   }, false);
 
   modalFeedbackClose.addEventListener("click", function (event) {
@@ -65,14 +64,17 @@
   }, false);
 
   modalFeedback.addEventListener("submit", function (event) {
-    if (!nameField.value) {
-      event.preventDefault();
-      modalFeedback.classList.remove("modal-error");
-      modalFeedback.offsetWidth;
-      modalFeedback.classList.add("modal-error");
-      nameField.focus();
+    var i, input;
+    for (i = inputs.length - 1; i >= 0; i--) {
+      input = inputs[i];
+      if (!input.value) {
+        event.preventDefault();
+        modalFeedback.classList.remove("modal-error");
+        modalFeedback.offsetWidth;
+        modalFeedback.classList.add("modal-error");
+        input.focus();
+      }
     }
-
   }, false);
 
 }());
