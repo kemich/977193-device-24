@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  var modalFeedback, modalFeedbackOpen, modalFeedbackClose, modalMap, modalMapOpen, modalMapClose, modalWrap;
+  var modalFeedback, modalFeedbackOpen, modalFeedbackClose, modalMap, modalMapOpen, modalMapClose, modalWrap, nameField, emailField;
 
   modalFeedback = document.querySelector(".js-modalFeedback");
   modalFeedbackOpen = document.querySelector(".js-modalFeedbackOpen");
@@ -11,38 +11,68 @@
   modalMapOpen = document.querySelector(".js-modalMapOpen");
   modalMapClose = document.querySelector(".js-modalMapClose");
   modalWrap = document.querySelector(".js-modalWrap");
+  nameField = modalFeedback.querySelector("[name=name]");
+  emailField = modalFeedback.querySelector("[name=email]");
 
   modalFeedbackOpen.addEventListener("click", function (event) {
     event.preventDefault();
-    modalWrap.style.display = "block";
-    modalFeedback.style.display = "block";
-    modalFeedback.querySelector("[name]").focus();
+    modalWrap.classList.add("wrap-show");
+    modalFeedback.classList.add("modal-show");
+    nameField.focus();
   }, false);
 
   modalFeedbackClose.addEventListener("click", function (event) {
     event.preventDefault();
-    modalFeedback.removeAttribute("style");
-    modalWrap.removeAttribute("style");
+    modalFeedback.classList.remove("modal-show");
+    modalFeedback.classList.remove("modal-error");
+    modalWrap.classList.remove("wrap-show");
   }, false);
 
   modalMapOpen.addEventListener("click", function (event) {
     event.preventDefault();
-    modalWrap.style.display = "block";
-    modalMap.style.display = "block";
+    modalWrap.classList.add("wrap-show");
+    modalMap.classList.add("modal-show");
     modalMapClose.focus();
   }, false);
 
   modalMapClose.addEventListener("click", function (event) {
     event.preventDefault();
-    modalMap.removeAttribute("style");
-    modalWrap.removeAttribute("style");
+    modalMap.classList.remove("modal-show");
+    modalMap.classList.remove("modal-error");
+    modalWrap.classList.remove("wrap-show");
   }, false);
 
   modalWrap.addEventListener("click", function (event) {
     event.preventDefault();
-    modalMap.removeAttribute("style");
-    modalFeedback.removeAttribute("style");
-    modalWrap.removeAttribute("style");
+    modalMap.classList.remove("modal-show");
+    modalMap.classList.remove("modal-error");
+    modalFeedback.classList.remove("modal-show");
+    modalFeedback.classList.remove("modal-error");
+    modalWrap.classList.remove("wrap-show");
+  }, false);
+
+  window.addEventListener("keydown", function (event) {
+    if (event.keyCode === 27) {
+      event.preventDefault();
+      if (modalFeedback.classList.contains("modal-show") || modalMap.classList.contains("modal-show")) {
+        modalMap.classList.remove("modal-show");
+        modalMap.classList.remove("modal-error");
+        modalFeedback.classList.remove("modal-show");
+        modalFeedback.classList.remove("modal-error");
+        modalWrap.classList.remove("wrap-show");
+      }
+    }
+  }, false);
+
+  modalFeedback.addEventListener("submit", function (event) {
+    if (!nameField.value) {
+      event.preventDefault();
+      modalFeedback.classList.remove("modal-error");
+      modalFeedback.offsetWidth;
+      modalFeedback.classList.add("modal-error");
+      nameField.focus();
+    }
+
   }, false);
 
 }());
