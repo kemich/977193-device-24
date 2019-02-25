@@ -1952,6 +1952,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 580px;
 }
 
@@ -2577,7 +2579,6 @@ body {
   margin: 0 auto 45px;
 }
 
-
 .site-content__products-filter {
   width: 270px;
   margin-left: 60px;
@@ -2590,8 +2591,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 70px;
   margin-bottom: 70px;
-  padding: 23px 0 23px 70px;
+  padding: 0 0 0 70px;
 
   line-height: 24px;
 }
