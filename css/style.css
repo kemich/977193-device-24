@@ -2747,6 +2747,10 @@ body {
   min-height: 555px;
 }
 
+iframe {
+  border: none;
+}
+
 iframe + img {
   display: none;
 }
