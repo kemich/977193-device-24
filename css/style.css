@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
   font-style: normal;
   font-weight: 800;
   font-family: "Gilroy";
@@ -2746,7 +2746,7 @@ body {
   min-height: 555px;
 }
 
-ymaps + img {
+iframe + img {
   display: none;
 }
 

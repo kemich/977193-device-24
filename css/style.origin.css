@@ -2399,7 +2399,7 @@ body {
   min-height: 555px;
 }
 
-ymaps + img {
+iframe + img {
   display: none;
 }
 
