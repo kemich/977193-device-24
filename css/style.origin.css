@@ -2272,7 +2272,7 @@ body {
 .site-content__products-sort {
   display: flex;
   align-items: center;
-  min-height: 70px;
+  height: 70px;
   margin-bottom: 70px;
   padding: 0 0 0 70px;
 
