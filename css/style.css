@@ -1701,15 +1701,28 @@ body {
 }
 
 .filter-form__fieldset {
-  position: relative;
-
   margin: 0 0 35px;
   padding: 0;
 
   border: none;
 }
 
-.filter-form__fieldset::before {
+.filter-form__legend {
+  position: relative;
+
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 12px 0 0;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.18px;
+}
+
+.filter-form__legend::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1719,18 +1732,6 @@ body {
   height: 2px;
 
   background-color: rgb(0, 0, 0);
-}
-
-.filter-form__legend {
-  margin-bottom: 25px;
-  padding: 10px 0 0;
-
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  color: rgb(0, 0, 0);
-  letter-spacing: 0.18px;
 }
 
 .filter-form__label {
@@ -1744,11 +1745,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 40px;
+  margin-bottom: 12px;
+  padding-left: 38px;
 
   font-weight: 300;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 28px;
   color: rgb(0, 0, 0);
   letter-spacing: 0.14px;
 
@@ -1759,10 +1761,6 @@ body {
   transition: opacity 0.3s;
 }
 
-.filter-form__label {
-  margin-bottom: 10px;
-}
-
 .filter-form__label:last-child {
   margin-bottom: 0;
 }
@@ -1770,8 +1768,8 @@ body {
 .filter-form__checkbox + .filter-form__label::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -2px;
+  left: -2px;
 
   width: 23px;
   height: 100%;
@@ -1809,8 +1807,8 @@ body {
 .filter-form__radio + .filter-form__label::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -2px;
+  left: -2px;
 
   width: 25px;
   height: 100%;
@@ -2076,7 +2074,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 0 40px;
+  margin: 0 0 45px;
   padding: 0;
 }
 
@@ -2454,13 +2452,14 @@ body {
           flex-direction: column;
   width: 1160px;
   min-height: 186px;
-  margin: 40px auto;
+  margin: 40px auto 35px;
 
   background-color: rgba(240, 197, 46, 0.5);
 }
 
 .site-header--index {
   min-height: 300px;
+  margin-bottom: 40px;
 }
 
 .site-header__logo {
@@ -2602,7 +2601,7 @@ body {
 }
 
 .site-content__products-pagination {
-  margin: 0 0 77px 70px;
+  margin: -10px 0 77px 70px;
 }
 
 .site-content__container {
