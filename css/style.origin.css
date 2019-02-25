@@ -1679,6 +1679,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  cursor: pointer;
 }
 
 .range-filter__scroll--left:hover,
